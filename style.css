@@ -1,6 +1,16 @@
 body {
     background-color: green;
 }
-h1 {
+
+.title {
+    display:flex;
+    justify-content: center;
+    background-color: blue;
     color:white;
+}
+.image-carousel {
+    display:flex;
+    justify-content: center;
+    background-color: yellow;
+    color:black;
 }
