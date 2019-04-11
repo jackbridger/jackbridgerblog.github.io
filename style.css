@@ -44,3 +44,8 @@ img {
     color: #FEFFFE;
 
 }
+.itemwhy {
+    display: flex;
+    justify-content: space-around;
+    background-color: #BFD7EA;
+}
