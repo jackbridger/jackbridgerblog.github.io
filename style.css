@@ -38,4 +38,9 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    background-color: #080708;
+}
+.links a {
+    color: #FEFFFE;
+
 }
