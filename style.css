@@ -1,17 +1,19 @@
-body {
-    background-color: green;
+body {#
+    background-color: #C9E4CA;
+    font-family: 'Merriweather', serif;
+
 }
 
 .title {
     display:flex;
     justify-content: center;
-    background-color: blue;
-    color:white;
+    background-color: #080708;
+    color:#FEFFFE;
 }
 .subtitle {
     display:flex;
     justify-content: center;
-    background-color: yellow;
+    background-color: #BFD7EA;
     color:black;
 }
 .image-carousel {
@@ -28,7 +30,7 @@ img {
 .description {
     display:flex;
     justify-content: center;
-    background-color: red;
+    background-color: #BCE7FD;
     color:black;
 }
 
