@@ -7,32 +7,26 @@ body {#
 .title {
     display:flex;
     justify-content: center;
-    background-color: #080708;
-    color:#FEFFFE;
+    background-color: #FEFFFE;
+    color:#080708;
 }
 .subtitle {
     display:flex;
     justify-content: center;
-    background-color: #BFD7EA;
+    /*background-color: #BFD7EA;*/
     color:black;
 }
-.image-carousel {
+/*.image-carousel {
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 img {
     max-width: 80%;
 }
 
-.description {
-    display:flex;
-    justify-content: center;
-    background-color: #BCE7FD;
-    color:black;
-}
 
 .links {
     display: flex;
@@ -41,21 +35,17 @@ img {
     background-color: #080708;
 }
 .links a {
-    color: #FEFFFE;
+    color:#FEFFFE ;
 
 }
-.itemwhy {
-    display: flex;
-    justify-content: space-around;
-    background-color: #BFD7EA;
-}
+
 /* 50vh - think of a viewport as having 100 vh */
 #slider, .wrap, .slide-content {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 50vh;
-    overflow-x: hidden;
+    height: 70vh;
+    overflow: hidden;
 }
 
 .wrap {
