@@ -2,10 +2,12 @@ body {#
     background-color: #C9E4CA;
     font-family: 'Merriweather', serif;
 
+
 }
 
 .title {
     display:flex;
+    text-align: center;
     justify-content: center;
     background-color: #FEFFFE;
 
@@ -26,6 +28,8 @@ body {#
     align-items: center;
     justify-content: center;
 }*/
+
+
 
 img {
     max-width: 100%;
@@ -63,18 +67,48 @@ img {
     background-repeat: no-repeat;
 }
 
-.slide1 {background-image: url('timeline_images/timeline1.jpg');}
-.slide2 {background-image: url('timeline_images/timeline2.jpg');}
+.slide1 {background-image:     linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('timeline_images/timeline1.jpg');}
+.slide2 {background-image:     linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('timeline_images/timeline2.jpg');}
 
-.slide3 {background-image: url('timeline_images/timeline3.jpg');}
+.slide3 {background-image:     linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('timeline_images/timeline3.jpg');}
 
-.slide4 {background-image: url('timeline_images/timeline4.jpg')}
-.slide5 {background-image: url('timeline_images/timeline5.jpg')}
-.slide6 {background-image: url('timeline_images/timeline6.jpg')}
-.slide7 {background-image: url('timeline_images/timeline7.jpg')}
-.slide8 {background-image: url('timeline_images/timeline8.jpg')}
-.slide9 {background-image: url('timeline_images/timeline9.jpg')}
-.slide10 {background-image: url('timeline_images/timeline10.jpg')}
+.slide4 {background-image:     linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('timeline_images/timeline4.jpg')}
+.slide5 {background-image:     linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('timeline_images/timeline5.jpg')}
+.slide6 {background-image:  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url('timeline_images/timeline6.jpg')}
+.slide7 {background-image:  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('timeline_images/timeline7.jpg')}
+.slide8 {background-image:  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('timeline_images/timeline8.jpg')}
+.slide9 {background-image:  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('timeline_images/timeline9.jpg')}
+.slide10 {background-image:  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('timeline_images/timeline10.jpg')}
 
 
 .slide-content {
@@ -82,12 +116,13 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .slide-content span{
     font-size: 5rem;
     color: #FEFFFE;
+    font-family: 'Open Sans', sans-serif;
+    /*background-color: green;*/
 }
 
 .arrow{
