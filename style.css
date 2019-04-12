@@ -19,6 +19,7 @@ body {#
 .subtitle {
     display:flex;
     justify-content: center;
+    text-align: center;
     /*background-color: #BFD7EA;*/
     color:black;
 }
@@ -39,12 +40,12 @@ img {
 .links {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-begin;
     background-color: #080708;
 }
 .links a {
     color:#FEFFFE ;
-
+    font-size: 1.2rem;
 }
 
 /* 50vh - think of a viewport as having 100 vh */
