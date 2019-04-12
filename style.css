@@ -8,7 +8,11 @@ body {#
     display:flex;
     justify-content: center;
     background-color: #FEFFFE;
+
+}
+.title a {
     color:#080708;
+    text-decoration: none;
 }
 .subtitle {
     display:flex;
