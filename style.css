@@ -120,9 +120,10 @@ img {
 }
 
 .slide-content span{
-    font-size: 5rem;
+    font-size: 2rem;
     color: #FEFFFE;
-    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    /*font-family: 'Open Sans', sans-serif;*/
     /*background-color: green;*/
 }
 
