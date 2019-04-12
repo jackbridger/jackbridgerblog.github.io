@@ -24,7 +24,7 @@ body {#
 }*/
 
 img {
-    max-width: 80%;
+    max-width: 100%;
 }
 
 
@@ -44,7 +44,7 @@ img {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -59,9 +59,18 @@ img {
     background-repeat: no-repeat;
 }
 
-.slide1 {background-image: url('images/codeatuni1.jpg');}
-.slide2 {background-image: url('images/codeatuni2.jpg');}
-.slide3 {background-image: url('images/codeatuni3.jpg');}
+.slide1 {background-image: url('timeline_images/timeline1.jpg');}
+.slide2 {background-image: url('timeline_images/timeline2.jpg');}
+
+.slide3 {background-image: url('timeline_images/timeline3.jpg');}
+
+.slide4 {background-image: url('timeline_images/timeline4.jpg')}
+.slide5 {background-image: url('timeline_images/timeline5.jpg')}
+.slide6 {background-image: url('timeline_images/timeline6.jpg')}
+.slide7 {background-image: url('timeline_images/timeline7.jpg')}
+.slide8 {background-image: url('timeline_images/timeline8.jpg')}
+.slide9 {background-image: url('timeline_images/timeline9.jpg')}
+.slide10 {background-image: url('timeline_images/timeline10.jpg')}
 
 
 .slide-content {
