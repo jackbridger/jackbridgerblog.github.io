@@ -41,11 +41,15 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: flex-begin;
+    /*text-align: center*/
     background-color: #080708;
+    min-height: 6vh;
+
 }
 .links a {
     color:#FEFFFE ;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
 /* 50vh - think of a viewport as having 100 vh */
