@@ -73,7 +73,7 @@ a {
 .hero {
 
     /*background-color: red;*/
-    height: 100%;
+    height: 60%;
 
 
 }
@@ -96,7 +96,7 @@ a {
 /*in big screen has the subheading and the headlink*/
 .right-hero {
     height:25%;
-    padding-top: 30px;
+    padding-top: 100px;
     /*padding: -30px 10px 30 0;*/
 
     /*background-color: orange;*/
@@ -116,12 +116,30 @@ a {
 
 /*images optimisation */
 .pic-container {
-
-
+    background-color: red;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align: space-between;
 }
 
+.pic1 {
+    height: 30%;
+    background-color: yellow;
+    flex-basis: auto;
 
-
+}
+.pic2 {
+    height: 30%;
+    background-color: blue;
+    flex-basis: auto;
+}
+.bottom-row-pics {
+    height: 30%;
+    background-color: orange;
+    flex-basis: auto;
+}
 
 
 /*hero large screen optimisation*/
