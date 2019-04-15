@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: red;
+    font-family: 'Merriweather', serif;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+    display: flex;
+    box-sizing: border-box;
+
+}
+/*Entire left side of the site*/
+#left-col {
+    height: 100%;
+    background-color: blue;
+    flex:1;
+}
+
+.sidebar {
+
+}
+/*Entire right side of the site*/
+#right-col {
+    height:100%;
+    background-color: green;
+    flex:9;
+}
+
+/*The right side. Currently taking up all space.*/
+.hero {
+    display:flex;
+    flex: 1;
+    background-color: red;
+    height: 100%;
+    flex-direction:column;
+}
+
+/*in big screen has the headline*/
+.left-hero {
+
+    height:40%;
+    background-color: yellow;
+}
+/*inside the left hero. Top, most important text.*/
+.headline {
+    height: 100%;
+    background-color: purple;
+}
+/*in big screen has the subheading and the headlink*/
+.right-hero {
+    height:100%;
+    background-color: orange;
+}
+/*Either directly beneath or to the right of the headline*/
+
+
+.subheading {
+    flex: 1;
+    height: 20%;
+    background-color: yellow;
+}
+.headlink {
+    flex: 1;
+    height: 50%;
+    background-color: green;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .hero {
+        flex-direction: row;
+    }
+    .right-hero {
+        flex:1;
+    }
+    .left-hero {
+        flex:2;
+    }
+}

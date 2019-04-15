@@ -12,141 +12,74 @@
 </head>
 <body>
 
-<div class="title">
-    <h1><a href ="index.html">Jack Bridger - Applicant, FAC Summer 2019</a></h1>
+<!-- <div class="title">
+    <h3><a href ="index.html">Jack Bridger - Applicant, FAC Summer 2019</a></h3>
+</div> -->
+
+<!-- The entire left side (i.e. the sidebar/navbar) -->
+<div class="column" id="left-col">
+    <!-- <h3>left col</h3> -->
+    <!-- containing all the links to codewars etc. -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="https://www.codewars.com/users/jackbridger">codewars</a></li>
+            <li><a href="https://www.freecodecamp.org/jacksbridger">Free Code Camp</a></li>
+            <li><a href="https://github.com/jackbridger">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/jack-bridger-047bb445/">LinkedIn</i></a></li>
+        </ul>
+
+    </div>
 </div>
-
-<div class="links">
-    <div class="codewars"> <a href="https://www.codewars.com/users/jackbridger">cw</a> </div>
-    <div class="freecodecamp"><a href="https://www.freecodecamp.org/jacksbridger"><i class="fab fa-free-code-camp"></i></a></div>
-    <div class="github"><a href="https://github.com/jackbridger"><i class="fab fa-github"></i></a></div>
-    <div class="linkedin"><a href="https://www.linkedin.com/in/jack-bridger-047bb445/"><i class="fab fa-linkedin-in"></i></a></div>
-
-</div>
-
-<div class="subtitle">
-    <h4> <b>Here's my long, winding tale of too many years as an 'almost-developer'.</b> <br><br> Or, why I'm finally re-applying to Founders and Coders. Five years later.</h4>
-</div>
-
-
-
-
-
-
-
-<!-- This is my first attempt at creating the image slider -->
-<div class="wrap">
-    <div id="arrow-left" class="arrow"></div>
-    <div id="slider">
-        <div class="slide slide1">
-            <div class="slide-content">
-                <span>2010 - Finish High School - big dreams! <br> <br> ...Join audit. <br> <br> Need to learn to code! </span>
+<!-- Entire right side i.e. everything except sidebar -->
+<div class="column" id="right-col">
+    <!-- <h3>right col</h3> -->
+    <!-- hero contains the headline, subheading, headlink. Linear in mobile, two columns side by side on bisgcreen -->
+    <div class="hero">
+        <!-- <h3>Hero</h3> -->
+        <!-- left hero currently just contains the headline. new col on big screen -->
+        <div class="left-hero">
+            <!-- <h3>left hero</h3> -->
+            <div class="headline">
+                <h1>Innovation in Education</h1>
             </div>
         </div>
-        <div class="slide slide2">
-            <div class="slide-content">
-                <span>2011 - Launch a tech company. Can't code. Raise money. </span>
+        <!-- right hero contains the subheading and the headlink -->
+        <div class="right-hero">
+            <!-- <h3>right hero</h3> -->
+            <div class="subheading">
+                <h3>Can innovation of delivery and cutting-edge technology lead to world-class education at a fraction of the cost?</h3>
             </div>
-        </div>
-        <div class="slide slide3">
-            <div class="slide-content">
-                <span>2012 - Company crashes and burns. <br><br> Painfully.<br><br> If only I could code. </span>
-            </div>
-        </div>
-        <div class="slide slide4">
-            <div class="slide-content">
-                <span>2013 - Need to learn to code. Organise coding course.</span>
-            </div>
-        </div>
-        <div class="slide slide5">
-            <div class="slide-content">
-                <span>2014 - More people want courses. <br> <br> Get good at organising courses. <br><br> Still can't code.</span>
-            </div>
-        </div>
-        <div class="slide slide6">
-            <div class="slide-content">
-                <span>2015 - finally learn to code - do masters in CS.</span>
-            </div>
-        </div>
-        <div class="slide slide7">
-            <div class="slide-content">
-                <span>2016 - but better at organizing courses than coding. </span>
-            </div>
-        </div>
-        <div class="slide slide8">
-            <div class="slide-content">
-                <span>2017 - taught thousands of students to code (for free!). <br><br> Forgetting how to code myself.</span>
-            </div>
-        </div>
-        <div class="slide slide9">
-            <div class="slide-content">
-                <span>2018 - forgot how to code. <br><br> Learned to sell. <br><br> Joined Stack Overflow </span>
-            </div>
-        </div>
-        <div class="slide slide10">
-            <div class="slide-content">
-                <span>2019 - Left job. Trip to Japan. (re)-learning to code. Finally. </span>
+            <div class="headlink">
+                <a href="">Learn more about how</a>
             </div>
         </div>
     </div>
-    <div id="arrow-right" class="arrow"></div>
 </div>
 
 
 
 
-<script>
-    let sliderImages = document.querySelectorAll('.slide');
-    let arrowLeft = document.querySelector('#arrow-left');
-    let arrowRight = document.querySelector('#arrow-right');
-    let current = 0;
-    // This will clear all images
-    function reset() {
-        for(let i = 0; i <sliderImages.length; i++) {
-            sliderImages[i].style.display = 'none';
-        }
-    }
-    //initalise the slider
-    function startSlide() {
-        reset();
-        sliderImages[0].style.display = 'block';
-    }
-
-    //show next
-    function slideRight() {
-        reset();
-        sliderImages[current + 1].style.display = 'block';
-        current++;
-    }
-
-
-
-    //show previous
-    function slideLeft() {
-        reset();
-        sliderImages[current - 1].style.display = 'block'
-        current--;
-    }
-
-    //right arrow click
-    arrowRight.addEventListener('click',function() {
-        if (current === sliderImages.length -1) {
-            current = -1;
-        }
-        slideRight();
-    })
 
 
 
 
-    //lleft arrow click
-    arrowLeft.addEventListener('click',function() {
-        if (current ===0) {
-            current = sliderImages.length;
-        }
-        slideLeft();
-    })
 
-</script>
+
+
+
+
+
+<!-- Typed version -->
+<!-- <div class="links">
+    <div class="codewars"> <a href="https://www.codewars.com/users/jackbridger">codewars</a> </div>
+    <div class="freecodecamp"><a href="https://www.freecodecamp.org/jacksbridger">Free Code Camp</i></a></div>
+    <div class="github"><a href="https://github.com/jackbridger">Github</a></div>
+    <div class="linkedin"><a href="https://www.linkedin.com/in/jack-bridger-047bb445/">LinkedIn</i></a></div>
+
+</div> -->
+
+
+
+
 </body>
 </html>
