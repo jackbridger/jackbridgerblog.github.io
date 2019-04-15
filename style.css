@@ -117,7 +117,7 @@ a {
 /*images optimisation */
 .pic-container {
     /*background-color: red;*/
-    height: 150vh;
+    height: 170vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -127,27 +127,41 @@ a {
     margin: 0;
     background-position: center;
     background-size: cover;
-    background-image: url('https://media.giphy.com/media/piXP1OcjHd9EkwoyIf/giphy.gif');
     width: 100%;
     height: 200px;
 }
+
+
 .pic1 {
-    height: 30%;
+    height: 33%;
     /*background-color: yellow;*/
     /*flex-basis: auto;*/
 
 }
-.pic2 {
-    height: 30%;
-    background-color: blue;
-    /*flex-basis: auto;*/
+
+.pic1 figure {
+    background-image: url('https://media.giphy.com/media/piXP1OcjHd9EkwoyIf/giphy.gif');
+
 }
-.bottom-row-pics {
-    height: 30%;
-    background-color: orange;
+.pic2 {
+    height: 33%;
+    /*background-color: blue;*/
     /*flex-basis: auto;*/
 }
 
+.pic2 figure {
+    background-image: url('images/justalevel.png');
+
+}
+.bottom-row-pics {
+    height: 33%;
+    /*background-color: orange;*/
+    /*flex-basis: auto;*/
+}
+.bottom-row-pics figure {
+    background-image: url('images/imperialresearch.jpg');
+
+}
 
 /*hero large screen optimisation*/
 
