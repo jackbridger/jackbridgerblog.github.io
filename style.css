@@ -6,7 +6,7 @@ body {
     /*background-color: red;*/
     font-family: 'Merriweather', serif;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
     margin: auto;
     display: flex;
     box-sizing: border-box;
@@ -22,10 +22,11 @@ body {
 }
 .sidebar {
     display:flex;
-    padding: 50px 20px 0px 10px;
+    padding: 45px 20px 0px 15px;
     writing-mode: vertical-lr;
-
+    flex-grow:1;
     flex-basis:100%;
+
 
 }
 
@@ -33,15 +34,24 @@ body {
     /*transform: rotate(90deg);*/
 
     display:flex;
-    flex: 1;
-    flex-basis: 10%;
+    flex-grow: 1;
+    flex-basis: auto;
     align-items: space-between;
+    justify-content: center;
+    padding-bottom: 15px;
     }
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
 
 .navhead {
     display:flex;
+    flex-grow: 1;
     font-weight: bold;
-    flex-basis: 10%;
+    flex-basis: auto;
+    padding-bottom: 20px;
 }
 
 }
@@ -73,6 +83,7 @@ body {
 /*inside the left hero. Top, most important text.*/
 .headline {
     /*background-color: purple;*/
+    min-height: 100%;
 }
 .headline h1 {
     font-size: 50px;
