@@ -11,18 +11,23 @@ body {
     display: flex;
     box-sizing: border-box;
     border: 0 0 0 0;
+    padding: 0 20px 0 0;
 
+}
+
+a {
+    color: black;
 }
 /*Entire left side of the site*/
 #left-col {
-    height: 100%;
+    height: 100vh;
     /*background-color: blue;*/
     flex-direction: column;
     flex-basis: 10%;
 }
 .sidebar {
     display:flex;
-    padding: 45px 20px 0px 15px;
+    padding: 40px 20px 0px 15px;
     writing-mode: vertical-lr;
     flex-grow:1;
     flex-basis:100%;
@@ -43,7 +48,6 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: black;
 }
 
 .navhead {
@@ -92,6 +96,8 @@ body {
 /*in big screen has the subheading and the headlink*/
 .right-hero {
     height:25%;
+    /*padding: -30px 10px 30 0;*/
+
     /*background-color: orange;*/
 }
 /*Either directly beneath or to the right of the headline*/
@@ -99,7 +105,7 @@ body {
 
 .subheading {
 
-    /*background-color: yellow;*/
+    padding: 0 0 0 0;
 }
 .headlink {
 
@@ -115,6 +121,7 @@ body {
     .right-hero {
         flex-direction: row;
         flex:2;
+        padding: 40px 0px 0 0;
     }
     .left-hero {
         flex:3;
