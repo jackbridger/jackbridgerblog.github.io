@@ -17,20 +17,33 @@ body {
 #left-col {
     height: 100%;
     /*background-color: blue;*/
-    flex:1;
+    flex-direction: column;
+    flex-basis: 10%;
+}
+.sidebar {
+    display:flex;
+    padding: 50px 20px 0px 10px;
+    writing-mode: vertical-lr;
+
+    flex-basis:100%;
+
 }
 
-.sidebar ul {
-    justify-content: space-around;
-    flex-flow: column nowrap;
-
-}
-.sidebar li {
-    display: inline-block;
-}
-.sidebar a {
-    display: block;
+.nav {
     /*transform: rotate(90deg);*/
+
+    display:flex;
+    flex: 1;
+    flex-basis: 10%;
+    align-items: space-between;
+    }
+
+.navhead {
+    display:flex;
+    font-weight: bold;
+    flex-basis: 10%;
+}
+
 }
 /*Entire right side of the site*/
 #right-col {
@@ -39,6 +52,7 @@ body {
     flex:9;
     display:flex;
     flex-direction: column;
+
 }
 
 /*The right side. Currently taking up all space.*/
@@ -46,12 +60,14 @@ body {
 
     /*background-color: red;*/
     height: 100%;
+
+
 }
 
 /*in big screen has the headline*/
 .left-hero {
-
     height:25%;
+
     /*background-color: yellow;*/
 }
 /*inside the left hero. Top, most important text.*/
@@ -60,6 +76,7 @@ body {
 }
 .headline h1 {
     font-size: 50px;
+
 }
 /*in big screen has the subheading and the headlink*/
 .right-hero {
