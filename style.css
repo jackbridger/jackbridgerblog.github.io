@@ -170,7 +170,7 @@ a {
     .hero {
         flex-direction: row;
         display: flex;
-        height: 45%;
+        height: 40%;
     }
     .right-hero {
         flex-direction: row;
@@ -194,6 +194,8 @@ a {
         height: 190vh;
         display: flex;
         align-content: flex-start;
+        background-color: #E7DFC6;
+        justify-content: flex-start;
     }
 
 
@@ -215,8 +217,8 @@ a {
     .top-row-pics h1 p {
         /*padding: 0 20px 0 20px;*/
     }
-    .bottom-row-pics {
-
+    .bottom-row-pics figure {
+        height: 100vh;
     }
 
 }
