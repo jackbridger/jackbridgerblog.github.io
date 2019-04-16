@@ -222,3 +222,70 @@ a {
     }
 
 }
+
+/*founders and coders application section*/
+
+.foundersblock {
+    display: flex;
+    flex-direction: column;
+
+}
+.foundersblock img {
+    width: 100%;
+
+}
+.foundersblock h1 {
+    font-size: 40px;
+
+}
+
+
+.foundersheading {
+    flex: 1;
+}
+.foundersslider {
+    flex:1;
+}
+
+@media only screen and (min-width: 700px) {
+.foundersblock {
+
+
+    /*height: 40%;*/
+    }
+
+
+
+.foundersheading {
+    display: flex;
+    flex-direction: row;
+    /*height: 300vh;*/
+}
+.whyfounders {
+    flex: 3;
+}
+.reasonfounders {
+    flex: 2;
+    padding: 40px 0px 0 0;
+}
+
+}
+
+
+/*     .hero {
+        flex-direction: row;
+        display: flex;
+        height: 40%;
+    }
+    .right-hero {
+        flex-direction: row;
+        flex:2;
+        padding: 40px 0px 0 0;
+    }
+    .left-hero {
+        flex:3;
+        flex-direction: row;
+
+    }
+
+/*
