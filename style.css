@@ -249,7 +249,7 @@ a {
 
 @media only screen and (min-width: 700px) {
 .foundersblock {
-
+    height: 120vh;
 
     /*height: 40%;*/
     }
@@ -259,6 +259,8 @@ a {
 .foundersheading {
     display: flex;
     flex-direction: row;
+    padding: 20px 0px 0 0;
+
     /*height: 300vh;*/
 }
 .whyfounders {
@@ -266,7 +268,7 @@ a {
 }
 .reasonfounders {
     flex: 2;
-    padding: 40px 0px 0 0;
+    padding: 40px 10px 0 0;
 }
 
 }
