@@ -117,7 +117,7 @@ a {
 /*images optimisation */
 .pic-container {
     /*background-color: red;*/
-    height: 170vh;
+    height: 190vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -169,6 +169,7 @@ a {
     .hero {
         flex-direction: row;
         display: flex;
+        height: 45%;
     }
     .right-hero {
         flex-direction: row;
@@ -178,5 +179,30 @@ a {
     .left-hero {
         flex:3;
         flex-direction: row;
+
     }
+}
+
+
+
+/*pictures large screen*/
+
+
+@media only screen and (min-width: 700px) {
+    .top-row-pics {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        /*border: 30px 30px 30px 30px;*/
+        /*flex-wrap: wrap;*/
+        width: 90%;
+        padding: 10px 10px 10px 10px ;
+    }
+
+    .pic1 .pic2 {
+        margin: 5px 5px 5px 5px;
+    }
+
+
+
 }
