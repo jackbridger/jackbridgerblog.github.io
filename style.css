@@ -9,8 +9,7 @@ body {
     overflow: auto;
     margin: auto;
     display: flex;
-    box-sizing: border-box;
-    border: 0 0 0 0;
+    /*box-sizing: border-box;*/
     padding: 0 20px 0 0;
 
 }
@@ -18,33 +17,27 @@ body {
 a {
     color: black;
 }
+
 /*Entire left side of the site*/
 #left-col {
-    height: 100vh;
-    /*background-color: blue;*/
     flex-direction: column;
-    flex-basis: 10%;
 }
+
 .sidebar {
     display:flex;
     padding: 40px 20px 0px 15px;
     writing-mode: vertical-lr;
-    flex-grow:1;
-    flex-basis:100%;
-
-
+    flex-grow:1 0 300px;
 }
 
 .nav {
-    /*transform: rotate(90deg);*/
-
     display:flex;
     flex-grow: 1;
     flex-basis: auto;
     align-items: space-between;
     justify-content: center;
     padding-bottom: 15px;
-    }
+}
 
 .nav a {
     text-decoration: none;
@@ -58,77 +51,52 @@ a {
     padding-bottom: 20px;
 }
 
+/*The mystery lynchpin semi colon!!!*/
 }
+/*WHY????!!!!!!!! Why does this break everything when deleted?*/
+
+
+
 /*Entire right side of the site*/
 #right-col {
-    height:100%;
-    /*background-color: green;*/
-    flex:9;
-    display:flex;
-    flex-direction: column;
-
 }
 
 /*The right side. Currently taking up all space.*/
 .hero {
-
-    /*background-color: red;*/
     height: 60%;
-
-
 }
 
 /*in big screen has the headline*/
 .left-hero {
     height:25%;
+}
 
-    /*background-color: yellow;*/
-}
 /*inside the left hero. Top, most important text.*/
-.headline {
-    /*background-color: purple;*/
-    min-height: 100%;
-}
+
 .headline h1 {
     font-size: 50px;
-
 }
 /*in big screen has the subheading and the headlink*/
 .right-hero {
-    height:25%;
     padding-top: 100px;
-    /*padding: -30px 10px 30 0;*/
-
-    /*background-color: orange;*/
 }
-/*Either directly beneath or to the right of the headline*/
-
-
-.subheading {
-
-    padding: 0 0 0 0;
-}
-.headlink {
-
-    /*background-color: purple;*/
-}
-
 
 /*images optimisation */
 .pic-container {
-    /*background-color: red;*/
     height: 190vh;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
 }
 .pic-container figure {
+
+/* if I want to make the boxes contain the images (not same size, remove the margin 0) */
     margin: 0;
     background-position: center;
-    background-size: cover;
+/*if i want to change how much image takes up then play around with the following 2 or 3:*/
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 
 
@@ -276,8 +244,11 @@ a {
 
 
 
-/*Slider css*/
 
+
+
+/*Slider css*/
+/*/*
 #slider, .wrap, .slide-content {
     margin: 0;
     padding: 0;
@@ -291,7 +262,7 @@ a {
 }
 
 /* Need to review since this is for full page  */
-.slide {
+/*.slide {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -349,3 +320,4 @@ a {
     border-color: transparent transparent transparent #FEFFFE;
 }
 
+*/*/*/
