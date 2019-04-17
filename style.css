@@ -8,6 +8,10 @@ body {
     height: 100%;
     overflow: auto;
     margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     box-sizing: border-box;
     padding: 0 20px 0 0;
@@ -26,19 +30,31 @@ a {
 
 /*Entire left side of the site*/
 #left-col {
+    webkit-flex-direction: column;
     flex-direction: column;
 }
 
 .sidebar {
-    display:flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     padding: 40px 20px 0px 15px;
     writing-mode: vertical-lr;
+    webkit-flex-grow:1 0 300px;
     flex-grow:1 0 300px;
 
 }
 
 .nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display:flex;
+    webkit-flex-grow: 1;
+    webkit-flex-basis: auto;
     flex-grow: 1;
     flex-basis: auto;
     align-items: space-between;
@@ -51,9 +67,15 @@ a {
 }
 
 .navhead {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display:flex;
+    webkit-flex-grow: 1;
     flex-grow: 1;
     font-weight: bold;
+    webkit-flex-basis: auto;
     flex-basis: auto;
     padding-bottom: 20px;
 }
@@ -66,8 +88,7 @@ a {
 
 /*Entire right side of the site*/
 #right-col {
-    /*width: 90%;*/
-
+    width: 90%;
 }
 
 /*The right side. Currently taking up all space.*/
@@ -93,6 +114,7 @@ a {
 /*images optimisation */
 .pic-container {
     height: 190vh;
+    webkit-flex-direction: column;
     flex-direction: column;
 }
 
@@ -101,16 +123,22 @@ a {
 /*hero large screen */
 @media only screen and (min-width: 700px) {
     .hero {
-        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display:flex;
         height: 40%;
     }
 
     .right-hero {
+        webkit-flex:2;
         flex:2;
         padding: 40px 0px 0 0;
     }
 
     .left-hero {
+        webkit-flex:3;
         flex:3;
     }
 }
@@ -120,7 +148,12 @@ a {
 /*founders and coders application section*/
 
 .foundersblock {
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:flex;
+    webkit-flex-direction: column;
     flex-direction: column;
 
 }
@@ -135,9 +168,11 @@ a {
 
 
 .foundersheading {
+    webkit-flex: 1;
     flex: 1;
 }
 .foundersslider {
+    webkit-flex:1;
     flex:1;
 }
 
@@ -149,15 +184,22 @@ a {
         }
 
     .foundersheading {
-        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display:flex;
+        webkit-flex-direction: row;
         flex-direction: row;
         padding: 20px 0px 0 0;
     }
 
     .whyfounders {
+        webkit-flex: 3;
         flex: 3;
     }
     .reasonfounders {
+        webkit-flex:2;
         flex: 2;
         padding: 40px 10px 0 0;
     }
@@ -168,7 +210,14 @@ a {
 /*The padding 5px (in parent) and margin 5px (in children) sets some space between children*/
 
 .portfolio__container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display:flex;
+    webkit-flex: 1 0 ;
+    webkit-flex-direction: column;
+    webkit-flex-wrap:wrap;
     flex: 1 0 ;
     flex-direction: column;
     flex-wrap:wrap;
@@ -186,7 +235,12 @@ a {
 }
 
 .portfolio__box {
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:flex;
+    webkit-flex-direction: column;
     flex-direction: column;
     align-items: center;
 }
@@ -207,14 +261,17 @@ a {
 
 @media only screen and (min-width: 700px) {
     .portfolio__container {
+        webkit-flex-direction:row;
         flex-direction:row;
 
     }
     .portfolio__box {
+    webkit-flex: 1 1 48%;
     flex: 1 1 48%;
     width: 100%;
     }
     .portfolio__box1 {
+    webkit-flex: 0 1 100%;
     flex: 0 1 100%;
     }
     .portfolio__box1 h3 {
