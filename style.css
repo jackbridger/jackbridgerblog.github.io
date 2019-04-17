@@ -14,8 +14,15 @@ body {
 
 }
 
+:root {
+    --dark-black: #000000;
+    --light-green: #CAD5CA;
+    --light-blue: #E6FDFF;
+    --light-sand: #E7DFC6;
+}
+
 a {
-    color: black;
+    color: var(--dark-black);
 }
 
 /*Entire left side of the site*/
@@ -100,7 +107,7 @@ a {
 
 .pic1 {
     height: 33%;
-    background-color: #CAD5CA;
+    background-color: var(--light-green);
     /*flex-basis: auto;*/
 
 }
@@ -111,7 +118,7 @@ a {
 }
 .pic2 {
     height: 33%;
-    background-color: #E6FDFF;
+    background-color: var(--light-blue);
 }
 
 .pic2 figure {
@@ -120,7 +127,7 @@ a {
 
 .bottom-row-pics {
     height: 33%;
-    background-color: #E7DFC6;
+    background-color: var(--light-sand);
 }
 
 .bottom-row-pics figure {
@@ -233,6 +240,11 @@ a {
 }
 
 
+/*New boxes plan*/
+
+.box-container {
+    display:flex;
+}
 
 
 
