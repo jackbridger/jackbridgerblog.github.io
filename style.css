@@ -85,10 +85,9 @@ a {
 .pic-container {
     height: 190vh;
     flex-direction: column;
-
 }
-.pic-container figure {
 
+.pic-container figure {
 /* if I want to make the boxes contain the images (not same size, remove the margin 0) */
     margin: 0;
     background-position: center;
@@ -98,7 +97,6 @@ a {
     width: 100%;
     height: 250px;
 }
-
 
 .pic1 {
     height: 33%;
@@ -114,56 +112,42 @@ a {
 .pic2 {
     height: 33%;
     background-color: #E6FDFF;
-    flex-basis: auto;
 }
 
 .pic2 figure {
     background-image: url('images/justalevel.png');
-
 }
+
 .bottom-row-pics {
     height: 33%;
     background-color: #E7DFC6;
-    /*background-color: orange;
-    /*flex-basis: auto;*/
 }
+
 .bottom-row-pics figure {
     background-image: url('images/imperialresearch.jpg');
-
 }
 
-/*hero large screen optimisation*/
-
+/*hero large screen */
 @media only screen and (min-width: 700px) {
     .hero {
-        flex-direction: row;
         display: flex;
         height: 40%;
     }
+
     .right-hero {
-        flex-direction: row;
         flex:2;
         padding: 40px 0px 0 0;
     }
+
     .left-hero {
         flex:3;
-        flex-direction: row;
-
     }
 }
 
-
-
 /*pictures large screen*/
-
-
 @media only screen and (min-width: 700px) {
     .pic-container {
-        height: 190vh;
-        display: flex;
-        align-content: flex-start;
-        background-color: #E7DFC6;
-        justify-content: flex-start;
+
     }
 
 
@@ -185,8 +169,15 @@ a {
     .top-row-pics h1 p {
         /*padding: 0 20px 0 20px;*/
     }
+
+    .bottom-row-desc {
+        height: 100%;
+        width: 100%;
+    }
+
     .bottom-row-pics figure {
-        height: 100vh;
+        height: 100%;
+        width: 100%
     }
 
 }
