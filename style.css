@@ -94,45 +94,7 @@ a {
     flex-direction: column;
 }
 
-.pic-container figure {
-/* if I want to make the boxes contain the images (not same size, remove the margin 0) */
-    margin: 0;
-    background-position: center;
-/*if i want to change how much image takes up then play around with the following 2 or 3:*/
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 250px;
-}
 
-.pic1 {
-    height: 33%;
-    background-color: var(--light-green);
-    /*flex-basis: auto;*/
-
-}
-
-.pic1 figure {
-    background-image: url('https://media.giphy.com/media/piXP1OcjHd9EkwoyIf/giphy.gif');
-
-}
-.pic2 {
-    height: 33%;
-    background-color: var(--light-blue);
-}
-
-.pic2 figure {
-    background-image: url('images/justalevel.png');
-}
-
-.bottom-row-pics {
-    height: 33%;
-    background-color: var(--light-sand);
-}
-
-.bottom-row-pics figure {
-    background-image: url('images/imperialresearch.jpg');
-}
 
 /*hero large screen */
 @media only screen and (min-width: 700px) {
@@ -152,35 +114,6 @@ a {
 }
 
 /*pictures large screen*/
-@media only screen and (min-width: 700px) {
-    .pic-container {
-
-    }
-
-    .top-row-pics {
-        display: flex;
-        width: 100%;;
-
-    }
-
-    .pic1 .pic2 {
-        height: 20%;
-        width: 500px;
-    }
-    .top-row-pics h1 p {
-    }
-
-    .bottom-row-desc {
-        height: 100%;
-        width: 100%;
-    }
-
-    .bottom-row-pics figure {
-        height: 100%;
-        width: 100%
-    }
-
-}
 
 /*founders and coders application section*/
 
