@@ -167,6 +167,7 @@ a {
 
 .portfolio__container {
     display:flex;
+    flex: 1 0 ;
     flex-direction: column;
     flex-wrap:wrap;
     padding: 5px;
@@ -178,7 +179,15 @@ a {
     width: 80%;
 }
 
+.portfolio__desc {
+    text-align: center;
+}
 
+.portfolio__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .portfolio__box1 {
     background-color: var(--light-green);
@@ -197,12 +206,17 @@ a {
 @media only screen and (min-width: 700px) {
     .portfolio__container {
         flex-direction:row;
-        justify-content: center;
+
     }
     .portfolio__box {
-    flex: 1 0 45%;
+    flex: 1 1 48%;
+    width: 100%;
     }
     .portfolio__box1 {
-    flex: 0 1 90%;
+    flex: 0 1 100%;
     }
+    .portfolio__box1 h3 {
+        font-size: 25px;
+    }
+
 }
