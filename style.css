@@ -94,11 +94,14 @@ a {
 /*The right side. Currently taking up all space.*/
 .hero {
     height: 60%;
+    display; flex;
+    padding: 5px;
 }
 
 /*in big screen has the headline*/
 .left-hero {
     height:25%;
+    margin: 5px;
 }
 
 /*inside the left hero. Top, most important text.*/
@@ -109,6 +112,7 @@ a {
 /*in big screen has the subheading and the headlink*/
 .right-hero {
     padding-top: 100px;
+    margin: 5px;
 }
 
 /*images optimisation */
