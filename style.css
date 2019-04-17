@@ -94,11 +94,15 @@ a {
 /*The right side. Currently taking up all space.*/
 .hero {
     height: 60%;
+<<<<<<< HEAD
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display:flex;
+=======
+    display; flex;
+>>>>>>> 2b709e6391a66ba5d567fe0486ae9ea34ebd1e05
     padding: 5px;
 }
 
