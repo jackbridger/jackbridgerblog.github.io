@@ -15,6 +15,7 @@ body {
     display: flex;
     box-sizing: border-box;
     padding: 0 20px 0 0;
+    /*flex-direction: column;*/
 }
 
 :root {
@@ -32,6 +33,7 @@ a {
 #left-col {
     webkit-flex-direction: column;
     flex-direction: column;
+
 }
 
 .sidebar {
@@ -60,6 +62,7 @@ a {
     align-items: space-between;
     justify-content: center;
     padding-bottom: 15px;
+    font-size: 20px;
 }
 
 .nav a {
@@ -89,11 +92,11 @@ a {
 /*Entire right side of the site*/
 #right-col {
     width: 90%;
+
 }
 
 /*The right side. Currently taking up all space.*/
 .hero {
-    height: 60%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -117,7 +120,7 @@ a {
 /*in big screen has the subheading and the headlink*/
 .right-hero {
     padding-top: 100px;
-    margin: 5px;
+    margin-left: auto;
 }
 
 
