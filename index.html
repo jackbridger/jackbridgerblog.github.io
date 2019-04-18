@@ -1,3 +1,13 @@
+
+<!-- General issues:
+    -Too much whitespace between sections on mobile
+    -Mobile section not switching to media
+ -->
+
+
+
+
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -13,11 +23,15 @@
 
 
 
+<!-- Sidebar Issues:
+    -This should be sticky when you scroll. But when I do position: fixed the content to the right moves in.
+    -This should be highly visible on all devices
+ -->
 <!-- The entire left side (i.e. the sidebar/navbar) -->
 <nav class="column" id="left-col">
     <!-- containing all the links to codewars etc. -->
     <section class="sidebar">
-        <div class="navhead">BRIDGER JACK</div>
+        <div class="navhead">JACK.BRIDGER</div>
         <div class="nav"><a href="https://www.codewars.com/users/jackbridger"> Codewars </a></div>
         <div class="nav"><a href="https://www.freecodecamp.org/jacksbridger"> FreeCodeCamp </a></div>
         <div class="nav"><a href="https://github.com/jackbridger"> Github </a></div>
@@ -30,11 +44,8 @@
 
 <!-- Entire right side i.e. everything except sidebar -->
 <main class="column" id="right-col">
-    <!-- hero contains the headline, subheading, headlink. Linear in mobile, two columns side by side on bisgcreen -->
-
-
+    <!-- hero contains the headline, subheading, headlink. Linear in mobile, two columns side by side on bigscreen -->
     <header class="hero">
-        <!-- <h3>Hero</h3> -->
         <!-- left hero currently just contains the headline. new col on big screen -->
         <section class="left-hero">
             <!-- <h3>left hero</h3> -->

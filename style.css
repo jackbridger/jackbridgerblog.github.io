@@ -125,7 +125,7 @@ a {
 
 
 /*hero large screen */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1025px) {
     .hero {
         display: -webkit-box;
         display: -moz-box;
@@ -183,7 +183,7 @@ a {
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1025px) {
 
     .foundersblock {
         height: 120vh;
@@ -265,7 +265,7 @@ a {
     margin: 5px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1025px) {
     .portfolio__container {
         webkit-flex-direction:row;
         flex-direction:row;
