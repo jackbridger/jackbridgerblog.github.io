@@ -62,7 +62,7 @@ a {
     align-items: space-between;
     justify-content: center;
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .nav a {
@@ -78,6 +78,7 @@ a {
     webkit-flex-grow: 1;
     flex-grow: 1;
     font-weight: bold;
+    font-size: 2em;
     webkit-flex-basis: auto;
     flex-basis: auto;
     padding-bottom: 20px;
