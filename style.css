@@ -110,6 +110,9 @@ a {
     flex-direction: row;
     align-items: center;
   }
+  .right-hero {
+    margin-bottom: 5px;
+  }
  }
 
 .headline h1 {
