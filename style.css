@@ -96,57 +96,24 @@ a {
 
 }
 
-/*The right side. Currently taking up all space.*/
 .hero {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display; flex;
-    padding: 5px;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
 }
 
-/*in big screen has the headline*/
-.left-hero {
-    height:25%;
-    margin: 5px;
-}
-
-/*inside the left hero. Top, most important text.*/
+@media only screen  and (min-width : 1224px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+ }
 
 .headline h1 {
-    font-size: 50px;
-}
-/*in big screen has the subheading and the headlink*/
-.right-hero {
-    padding-top: 100px;
-    margin-left: auto;
-}
-
-
-/*hero large screen */
-@media only screen  and (min-width : 1224px) {
-    .hero {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display:flex;
-        flex-direction: row;
-        height: 40%;
-    }
-
-    .right-hero {
-        webkit-flex:2;
-        flex:2;
-        padding: 50px 0px 0 0;
-    }
-
-    .left-hero {
-        webkit-flex:3;
-        flex:3;
-    }
+  font-size: 50px;
 }
 
 /*pictures large screen*/
