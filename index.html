@@ -147,11 +147,14 @@
     }
 
     function prevImg() {
-        // i--;
-        // (i < 0) ? i = num_images - 1;
-        // document.slide.src = images[i];
-        // clearTimer(time);
-        // setTimeout(changeImg,time);
+        if (i > 0)
+            i--;
+        else
+            i = num_images -1;
+
+        document.slide.src = images[i];
+        clearTimer(time);
+        setTimeout(changeImg,time);
     }
 
     function pausePlay() {
@@ -165,6 +168,14 @@
         moving = !moving;
         changeImg();
     }
+
+    document.onkeydown = function(e) {
+    switch (event.keyCode) {
+    case 37:
+        prevImg();
+    case 39:
+        nextImg();
+    }}
 
 
     window.onload = changeImg;
