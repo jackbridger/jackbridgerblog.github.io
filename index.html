@@ -122,28 +122,28 @@
 <script>
     var i = 0,
         images = ['images/codeatuni1.jpg','images/codeatuni2.jpg','images/codeatuni3.jpg','images/codeatuni4.jpg','images/codeatuni5.jpg','images/codeatuni6.jpg','images/codeatuni7.jpg','images/codeatuni8.jpg','images/codeatuni9.jpg'],
-        time = 4000,
-        moving = true;
+        speed = 1000,
+        moving = true,
+        timer = speed;
 
     const num_images = images.length;
 
     function changeImg(){
-
+        clearTimeout(timer);
+        timer = setTimeout(changeImg,speed);
         if (moving) {
             document.slide.src = images[i];
             i < (num_images -1) ? i++ : i = 0;}
         else
-            clearTimer(time);
+            clearTimeout(timer);
 
-        setTimeout(changeImg,time);
+
     }
 
     function nextImg() {
         i++;
         i = i % num_images;
         document.slide.src = images[i];
-        clearTimer(time);
-        setTimeout(changeImg,time);
     }
 
     function prevImg() {
@@ -153,8 +153,6 @@
             i = num_images -1;
 
         document.slide.src = images[i];
-        clearTimer(time);
-        setTimeout(changeImg,time);
     }
 
     function pausePlay() {
