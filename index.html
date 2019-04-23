@@ -107,9 +107,9 @@
         <section class="founderslider">
             <img name ="slide">
             <div class="sliderbuttons">
-                <button id="previousslider" onclick="return">Previous</button>
+                <button id="previousslider" onclick="prevImg()">Previous</button>
                 <button id="pauseslider" onclick="pausePlay()">Pause</button>
-                <button id="nextslider">Next</button>
+                <button id="nextslider" onclick="nextImg()">Next</button>
             </div>
 
         </section>
@@ -122,7 +122,7 @@
 <script>
     var i = 0,
         images = ['images/codeatuni1.jpg','images/codeatuni2.jpg','images/codeatuni3.jpg','images/codeatuni4.jpg','images/codeatuni5.jpg','images/codeatuni6.jpg','images/codeatuni7.jpg','images/codeatuni8.jpg','images/codeatuni9.jpg'],
-        time = 1000,
+        time = 4000,
         moving = true;
 
     const num_images = images.length;
@@ -139,11 +139,19 @@
     }
 
     function nextImg() {
-
+        i++;
+        i = i % num_images;
+        document.slide.src = images[i];
+        clearTimer(time);
+        setTimeout(changeImg,time);
     }
 
     function prevImg() {
-
+        // i--;
+        // (i < 0) ? i = num_images - 1;
+        // document.slide.src = images[i];
+        // clearTimer(time);
+        // setTimeout(changeImg,time);
     }
 
     function pausePlay() {
