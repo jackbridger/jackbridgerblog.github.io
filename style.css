@@ -31,6 +31,8 @@ a {
 #left-col {
     webkit-flex-direction: column;
     flex-direction: column;
+    position: fixed;
+
 
 }
 
@@ -44,6 +46,7 @@ a {
     writing-mode: vertical-lr;
     webkit-flex-grow:1 0 300px;
     flex-grow:1 0 300px;
+
 
 }
 
@@ -85,6 +88,7 @@ a {
 
 #right-col {
     width: 90%;
+padding-left: 100px;
 
 }
 
@@ -95,6 +99,7 @@ a {
   flex-direction: column;
   padding: 5px;
   width: 100%;
+
 }
 
 @media only screen  and (min-width : 1224px) {
