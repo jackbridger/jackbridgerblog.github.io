@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    /*background-color: red;*/
     font-family: 'Merriweather', serif;
     height: 100%;
     overflow: auto;
@@ -15,7 +14,6 @@ body {
     display: flex;
     box-sizing: border-box;
     padding: 0 20px 0 0;
-    /*flex-direction: column;*/
 }
 
 :root {
@@ -30,7 +28,6 @@ a {
     color: var(--dark-black);
 }
 
-/*Entire left side of the site*/
 #left-col {
     webkit-flex-direction: column;
     flex-direction: column;
@@ -85,13 +82,7 @@ a {
     padding-bottom: 20px;
 }
 
-/*The mystery lynchpin semi colon!!!*/
-}
-/*WHY????!!!!!!!! Why does this break everything when deleted?*/
 
-
-
-/*Entire right side of the site*/
 #right-col {
     width: 90%;
 
@@ -120,9 +111,7 @@ a {
   font-size: 50px;
 }
 
-/*pictures large screen*/
 
-/*founders and coders application section*/
 
 .foundersblock {
     display: -webkit-box;
@@ -162,21 +151,6 @@ a {
 
 @media only screen  and (min-width : 1224px) {
 
-/*    .foundersblock {
-        height: 120vh;
-        }*/
-
-/*    .foundersheading {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display:flex;
-        webkit-flex-direction: row;
-        flex-direction: row;
-        padding: 20px 0px 0 0;
-    }*/
-
     .whyfounders {
         webkit-flex: 3;
         flex: 3;
@@ -187,10 +161,6 @@ a {
         padding: 40px 10px 0 0;
     }
 }
-
-
-/*new box testing*/
-/*The padding 5px (in parent) and margin 5px (in children) sets some space between children*/
 
 .portfolio__container {
     display: -webkit-box;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content-"width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel='icon' href='./images/favicon.ico' type='image/x-icon'/>
     <title>Jack Bridger | FAC Application</title>
@@ -14,7 +15,6 @@
 
 <!-- The entire left side (i.e. the sidebar/navbar) -->
 <nav class="column" id="left-col">
-    <!-- containing all the links to codewars etc. -->
     <section class="sidebar">
         <div class="navhead">JACK.BRIDGER</div>
         <div class="nav"><a href="https://www.codewars.com/users/jackbridger"> Codewars </a></div>
@@ -26,21 +26,16 @@
 </nav>
 
 
-
 <!-- Entire right side i.e. everything except sidebar -->
 <main class="column" id="right-col">
-    <!-- hero contains the headline, subheading, headlink. Linear in mobile, two columns side by side on bigscreen -->
+
     <header class="hero">
-        <!-- left hero currently just contains the headline. new col on big screen -->
         <section class="left-hero">
-            <!-- <h3>left hero</h3> -->
             <summary class="headline">
                 <h1>Delivering Affordable Education</h1>
             </summary>
         </section>
-        <!-- right hero contains the subheading and the headlink -->
         <section class="right-hero">
-            <!-- <h3>right hero</h3> -->
             <summary class="subheading">
                 <h3>“People who have money can buy themselves the best education in the world and people who don’t barely learn how to read and write, and because of that they never make money."</h3>
             </summary>
@@ -51,38 +46,35 @@
     </header>
 
 
-
-
-
-    <!-- This is the next section of the site containing three pictures-->
+    <!-- Portfolio section-->
     <section class="portfolio__container">
-        <article class="portfolio__box portfolio__box1">
+        <section class="portfolio__box portfolio__box1">
 
             <img class="portfolio__img" src ="https://media.giphy.com/media/piXP1OcjHd9EkwoyIf/giphy.gif" alt="A Code at Uni coding course montage">
             <figdesc class="portfolio__desc">
-                <h3><a href="https://www.codeatuni.com/">Code at Uni</a></h3> <p>Free coding courses for more than 5,000 university students across 20+ UK universities.</p>
+                <h3><a href="https://www.codeatuni.com/">Code at Uni, Founder</a></h3> <p>Free coding courses for more than 5,000 university students across 20+ UK universities.</p>
             </figdesc>
-        </article>
-        <article class="portfolio__box portfolio__box2">
+        </section>
+        <section class="portfolio__box portfolio__box2">
             <img class="portfolio__img" src ="images/justalevel.png" alt="A screenshot of the Just A level course content">
             <figdesc class="portfolio__desc">
-                <h3><a href="https://justalevel.com/">Just A level</a></h3> <p>Experiment -free instructional videos in specific topics for A level Computer Science. Watched by thousands of students. </p>
+                <h3><a href="https://justalevel.com/">Just A level, Founder</a></h3> <p>Experiment - free instructional videos in specific topics for A level Computer Science. Watched by thousands of students. </p>
             </figdesc>
-        </article>
-        <article class="portfolio__box portfolio__box3">    <img class="portfolio__img" src="images/imperialresearch.jpg" alt="Primary school children in a classroom studying happily">
+        </section>
+        <section class="portfolio__box portfolio__box3">    <img class="portfolio__img" src="images/imperialresearch.jpg" alt="Primary school children in a classroom studying happily">
             <figdesc class="portfolio__desc">
-                <h3><a href="https://drive.google.com/open?id=16BfBKT82_hnrNs7bEOPplsL5AJ1cG9Ev">Imperial College London</a></h3> Research and functional    prototype. How simple changes to parent-teacher communication can drive improvement in student performance.
+                <h3><a href="https://drive.google.com/open?id=16BfBKT82_hnrNs7bEOPplsL5AJ1cG9Ev">Imperial College, MSc Dissertation</a></h3> Research and functional   prototype. How simple changes to parent-teacher communication can drive improvement in student performance.
             </figdesc>
-        </article>
+        </section>
     </section>
 
 
-
+    <!-- Section describing motivation for FAC -->
     <section class="foundersblock">
         <section class="foundersheading">
             <summary class="whyfounders">
                 <h1>Why FAC? Why me?</h1>
-                <h2>I first applied to FAC 4 years ago. Since then I've been on a varied journey in the world of <a href="https://www.imperial.ac.uk/study/pg/computing/computing-science/">Computer Science</a>, <a href="codeatuni.com">startups</a> and even working at <a href="https://stackoverflow.com">Stack Overflow</a>. I think I can contribute a lot to the FAC community. </h3>
+                <h2>I first applied to FAC 4 years ago. Since then I've been on a varied journey in the world of <a href="https://www.imperial.ac.uk/study/pg/computing/computing-science/">Computer Science</a>, <a href="codeatuni.com">startups</a> and even working at <a href="https://stackoverflow.com">Stack Overflow</a>. I hope to contribute to the curiousity, kindness and entrepreneurial spirit of the FAC community. </h3>
 
                 <p>Education has enabled me to do so many things I never thought possible growing up.</p>
 
@@ -121,68 +113,6 @@
 
     <!-- end of right side column -->
 </main>
-
-
-<script>
-    var i = 0,
-        images = ['images/codeatuni11.jpg','images/codeatuni12.jpg','images/codeatuni13.jpg','images/codeatuni14.jpg'],
-        speed = 1000,
-        moving = true,
-        timer = speed;
-
-    const num_images = images.length;
-
-    function changeImg(){
-        clearTimeout(timer);
-        timer = setTimeout(changeImg,speed);
-        if (moving) {
-            document.slide.src = images[i];
-            i < (num_images -1) ? i++ : i = 0;}
-        else
-            clearTimeout(timer);
-
-
-    }
-
-    function nextImg() {
-        i++;
-        i = i % num_images;
-        document.slide.src = images[i];
-    }
-
-    function prevImg() {
-        if (i > 0)
-            i--;
-        else
-            i = num_images -1;
-
-        document.slide.src = images[i];
-    }
-
-    function pausePlay() {
-        if (!moving) {
-            document.getElementById("pauseslider").innerText = 'Pause'}
-        else {
-            document.getElementById("pauseslider").innerText = 'Play'
-            i--;
-        }
-
-        moving = !moving;
-        changeImg();
-    }
-
-    document.onkeydown = function(e) {
-    switch (event.keyCode) {
-    case 37:
-        prevImg();
-    case 39:
-        nextImg();
-    }}
-
-
-    window.onload = changeImg;
-
-</script>
 
 </body>
 </html>
