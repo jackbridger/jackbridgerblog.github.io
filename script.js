@@ -1,33 +1,36 @@
-    var img_displayed = 0,
+    var i = 0,
         images = ['images/codeatuni11.jpg','images/codeatuni12.jpg','images/codeatuni13.jpg','images/codeatuni14.jpg'],
-        speed_image_carousel = 4000,
-        carousel_moving = true,
-        timer = speed_image_carousel;
+        speed = 2500,
+        moving = true,
+        timer = speed;
 
     const num_images = images.length;
 
     function changeImg(){
         clearTimeout(timer);
-        timer = setTimeout(changeImg,speed_image_carousel);
-        if (carousel_moving) {
-            document.slide.src = images[img_displayed];
-            img_displayed < (num_images -1) ? img_displayed++ : img_displayed = 0;}
+        timer = setTimeout(changeImg,speed);
+        if (moving) {
+            document.slide.src = images[i];
+            i < (num_images -1) ? i++ : i = 0;}
         else
             clearTimeout(timer);
+
+
     }
 
     function nextImg() {
-        img_displayed++;
-        img_displayed = img_displayed % num_images;
+        i++;
+        i = i % num_images;
         document.slide.src = images[i];
     }
 
     function prevImg() {
-        if (img_displayed > 0)
-            img_displayed--;
+        if (i > 0)
+            i--;
         else
-            img_displayed = num_images -1;
-        document.slide.src = images[img_displayed];
+            i = num_images -1;
+
+        document.slide.src = images[i];
     }
 
     function pausePlay() {
@@ -35,7 +38,7 @@
             document.getElementById("pauseslider").innerText = 'Pause'}
         else {
             document.getElementById("pauseslider").innerText = 'Play'
-            img_displayed--;
+            i--;
         }
 
         moving = !moving;
