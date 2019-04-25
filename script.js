@@ -14,8 +14,6 @@
             i < (num_images -1) ? i++ : i = 0;}
         else
             clearTimeout(timer);
-
-
     }
 
     function nextImg() {
@@ -46,12 +44,12 @@
     }
 
     document.onkeydown = function(e) {
-    switch (event.keyCode) {
-    case 37:
-        prevImg();
-    case 39:
-        nextImg();
-    }}
+        e = e || window.event;
+        if (e.keyCode == '37') {
+            prevImg();}
+        else if (e.keyCode == '39') {
+            nextImg();}
+    }
 
 
     window.onload = changeImg;
