@@ -36,7 +36,17 @@ header {
     margin: 5px;
     flex-grow: 1;
 }
-
+@media only screen  and (min-width : 1224px) {
+    .hero {
+        display:flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    h1 { min-width:  30%;}
+    .dummy-header-div {
+        min-width:10%
+    }
+   }
 
 main {
     border: 2px solid yellowgreen;
