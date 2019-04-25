@@ -4,12 +4,12 @@ body {
     display: flex;
     padding: 5px;
 }
-
-
 img { 
-    width: 80%; 
+    width: 100%; 
+    min-width: 200px;
     align-self: center
 }
+
 .left-col-dummy {
     padding: 10px;
     min-width: 80px;
@@ -55,7 +55,11 @@ main {
     flex-direction: column;
     
 }
-.portfolio1 {border: solid rgb(0, 81, 255);}
+.portfolio1 
+    {border: solid rgb(0, 81, 255);
+}
+.portfolio1 img {
+}
 .portfolio2 {border: solid rgb(255, 0, 0);}
 .portfolio3 {border: solid rgb(255, 0, 179);}
 .motivation1 {border: solid  rgb(0, 81, 255);}
