@@ -44,31 +44,17 @@ main {
     display: flex;
     flex-direction: column;
 }
-.portfolio1 {
-    border: 2px solid rgb(0, 81, 255);
+.box {
     margin: 5px;
+    border: 2px;
+    padding: 5px;
 }
-.portfolio2 {
-    border: 2px solid rgb(255, 0, 0);
-    margin: 5px;
-}
-.portfolio3 {
-    border: 2px solid rgb(255, 0, 179);
-    margin: 5px;
-}
-
-.motivation1 {
-    border: 2px solid rgb(0, 81, 255);
-    margin: 5px;
-}
-.motivation2 {
-    border: 2px solid rgb(255, 0, 0);
-    margin: 5px;
-}
-.motivation3 {
-    border: 2px solid rgb(255, 0, 179);
-    margin: 5px;
-}
+.portfolio1 {border: solid rgb(0, 81, 255);}
+.portfolio2 {border: solid rgb(255, 0, 0);}
+.portfolio3 {border: solid rgb(255, 0, 179);}
+.motivation1 {border: solid  rgb(0, 81, 255);}
+.motivation2 {border: solid  rgb(255, 0, 0);}
+.motivation3 {border: solid  rgb(255, 0, 179); }
 
 
 
