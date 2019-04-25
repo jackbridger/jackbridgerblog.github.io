@@ -1,18 +1,81 @@
 body {
+    font-family: 'Merriweather', serif;
     border: 2px solid green;
     display: flex;
+    padding: 5px;
 }
-.right-col {
-    border: 2px solid red;
-    flex-grow: 5;
-}
-.left-col {
-    border: 2px solid yellow;
-    /*position: fixed;*/
-    flex-grow: 1;
-    flex-basis: 10rem;
+.left-col-dummy {
+    padding: 10px;
+    min-width: 70px;
+    border: 2px solid purple;
+
 }
 .side-bar {
     position:fixed;
     border: 2px solid blue;
+    margin: auto;
+    padding: 20px;
+    writing-mode: vertical-lr;
+    font-size: 20px;
+
+}
+.right-col {
+    border: 2px solid red;
+    margin: 5px;
+    padding: 5px;
+
+}
+header {
+    border: 2px solid orange;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+
+
+
+
+main {
+    border: 2px solid yellowgreen;
+    padding: 5px;
+    margin: 5px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+.portfolio1 {
+    border: 2px solid rgb(0, 81, 255);
+    margin: 5px;
+}
+.portfolio2 {
+    border: 2px solid rgb(255, 0, 0);
+    margin: 5px;
+}
+.portfolio3 {
+    border: 2px solid rgb(255, 0, 179);
+    margin: 5px;
+}
+
+.motivation1 {
+    border: 2px solid rgb(0, 81, 255);
+    margin: 5px;
+}
+.motivation2 {
+    border: 2px solid rgb(255, 0, 0);
+    margin: 5px;
+}
+.motivation3 {
+    border: 2px solid rgb(255, 0, 179);
+    margin: 5px;
+}
+
+
+
+
+footer {
+    border: 2px solid pink;
+    padding: 5px;
+    margin: 5px;
+    flex-grow: 1;
 }
