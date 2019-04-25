@@ -1,0 +1,18 @@
+body {
+    border: 2px solid green;
+    display: flex;
+}
+.right-col {
+    border: 2px solid red;
+    flex-grow: 5;
+}
+.left-col {
+    border: 2px solid yellow;
+    /*position: fixed;*/
+    flex-grow: 1;
+    flex-basis: 10rem;
+}
+.side-bar {
+    position:fixed;
+    border: 2px solid blue;
+}
