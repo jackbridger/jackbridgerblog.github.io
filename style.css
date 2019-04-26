@@ -88,6 +88,10 @@ main {
     align-self: center
 }
 
+.img_box {
+    justify-content: start;
+}
+
 .intro {border: solid rgb(255, 32, 153);}
 .portfolio1
     {border: solid rgb(0, 81, 255);
