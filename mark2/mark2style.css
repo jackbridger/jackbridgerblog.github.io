@@ -5,9 +5,10 @@ body {
     padding: 5px;
 }
 img { 
-    width: 100%; 
+    width: 70%; 
     min-width: 200px;
     align-self: center
+    
 }
 
 .left-col-dummy {
@@ -59,10 +60,19 @@ main {
 .box {
     margin: 5px;
     border: 2px;
-    padding: 5px;
+    padding: 20px 5px 0px 5px;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+}
+.box h4 {
+    width: 70%;
+    align-self: center
+}
+
+.box p {
+    width: 70%;
+    align-self: center
 }
 .portfolio1 
     {border: solid rgb(0, 81, 255);
