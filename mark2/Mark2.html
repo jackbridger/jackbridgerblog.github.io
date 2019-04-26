@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content-"width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="mark2style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="mark2script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/sushi_1f363.png">
     <title>Jack Bridger | FAC Application</title>
@@ -24,7 +24,7 @@
         <div class="dummy-header-div"></div>
         <div class ="subheader">
             <h2>“People who have money can buy themselves the best education in the world and people who don’t barely learn how to read and write, and because of that they never make money."</h2>
-            <p>Luis Von Anh - Founder of DuoLingo</p>
+            <p>Luis Von Anh - Founder of Duolingo</p>
         </div>
     </header>
     <main>
@@ -77,7 +77,14 @@
             </p>
         </div>
         <div class="box img_box motivation3">
-            <img class="portfolio__img" src="images_2/codeatuni2_6.jpg" alt="Code at Uni course pictures">
+            
+                <img id="imgSlider" name ="slide">
+                <div class="sliderbuttons">
+                    <button id="previousslider" onclick="prevImg()">Previous</button>
+                    <button id="pauseslider" onclick="pausePlay()">Pause</button>
+                    <button id="nextslider" onclick="nextImg()">Next</button>
+                </div>
+            
 
             <h3>What can I bring to FAC?</h3>
             <p> 

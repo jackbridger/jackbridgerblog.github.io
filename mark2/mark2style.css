@@ -11,6 +11,17 @@ img {
     
 }
 
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
 .left-col-dummy {
     padding: 10px;
     min-width: 80px;
@@ -84,6 +95,12 @@ main {
 .motivation1 {border: solid  rgb(0, 81, 255);}
 .motivation2 {border: solid  rgb(255, 0, 0);}
 .motivation3 {border: solid  rgb(255, 0, 179); }
+
+.sliderbuttons {
+    align-self:center;
+}
+
+
 
 @media only screen  and (min-width : 1224px) {
     main {
