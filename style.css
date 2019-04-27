@@ -148,7 +148,9 @@ footer {
 .motivation1, .motivation2 {
     order: 2
 }
-
+.extraspace {
+    min-height:10px;
+}
 
 @media only screen  and (min-width : 1224px) {
     main {
@@ -164,6 +166,9 @@ footer {
     }
     .portfolio1 img, .motivation3 img, .portfolio1 p, .portfolio1 h3, .motivation3 p, .motivation3 h3 {
         width: 85%
+    }
+    .extraspace {
+        min-height:20px;
     }
 
 }
