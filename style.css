@@ -76,6 +76,16 @@ header {
     }
 }
 
+.firstsubtitle u {
+    text-decoration: none;
+    border-bottom: 5px solid var(--portfolio1);
+}
+
+.secondsubtitle u {
+    text-decoration: none;
+    border-bottom: 5px solid var(--motivation1);
+}
+
 main {
     /* border: 2px solid yellowgreen; */
     padding: 10px;
