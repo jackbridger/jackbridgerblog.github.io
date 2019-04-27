@@ -1,14 +1,14 @@
 /* The new stylesheet */
 
 :root {
-    --portfolio1: #b9d7ea;
-    --portfolio2_3: #d6e6f2;
+    --portfolio1: #91C0E0;
+    --portfolio2_3: #CEE5F2;
     /* --subtitle1: red; */
-    --motivation1: #769fcd;
-    --motivation2_3: yellow;
-    --subtitle2: red;
-    --main-font: red;
-    --footer_col: red;
+    --motivation1: #A4C3B2;
+    --motivation2_3: #CCE3DE;
+    --subtitle2: #BD9391;
+    --main-font:  #BD9391;
+    /* --footer_col:  #BD9391; */
 }
 
 
@@ -125,6 +125,7 @@ main {
 }
 footer {
     background-color: var(--footer_col);
+
 }
 /* .contribute {border: solid rgb(10, 50, 10);} */
 /* .motivation1 {border: solid  rgb(0, 81, 255);} */
