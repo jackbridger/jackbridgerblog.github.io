@@ -1,5 +1,5 @@
 var i = 0,
-images = [z,'images_2/codeatuni2_3.jpg','images_2/codeatuni2_5.jpg','images_2/codeatuni2_6.jpg'],
+images = ['images_2/codeatuni2_3.jpg','images_2/codeatuni2_5.jpg','images_2/codeatuni2_6.jpg'],
 speed = 2500,
 moving = true,
 timer = speed;
