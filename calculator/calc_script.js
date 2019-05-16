@@ -1,3 +1,5 @@
+var input = [];
+
 function calculate(input) {
     
 }
@@ -19,5 +21,50 @@ function add(input) {
 }
 
 function simplifyString(input) {
+
+}
+
+
+function one() {
+
+}
+function two() {
+    
+}
+function three() {
+    
+}
+function four() {
+    
+}
+function five() {
+    
+}
+function six() {
+    
+}
+function seven() {
+    
+}
+function eight() {
+    
+}
+function nine() {
+    
+}
+
+function zero() {
+    
+}
+
+function point() {
+
+}
+
+function equals() {
+
+}
+
+function clear() {
 
 }
