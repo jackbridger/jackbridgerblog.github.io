@@ -1,4 +1,6 @@
 var input = [];
+var history = '';
+var display = '';
 
 function calculate(input) {
     
@@ -54,7 +56,7 @@ function nine() {
 }
 
 function zero() {
-    
+
 }
 
 function point() {

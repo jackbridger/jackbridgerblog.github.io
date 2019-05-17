@@ -141,3 +141,180 @@ function testFullEvaluation(input) {
       }
 }
 
+// Check 1 is being added properly
+function testOne() {
+    input = [];
+    var expected = ['1'];
+    one();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testOne(  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testOne Test passed ✔︎');
+    }
+}
+// Check 2 is being added properly
+function testTwo() {
+    input = ['1','multiply'];
+    var expected = ['1', 'multiply','2'];
+    two();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testTwo  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testTwo Test passed ✔︎');
+    }
+}
+
+// Check 3 is being added properly
+function testThree() {
+    input = ['4','divide'];
+    var expected = ['4', 'divide','3'];
+    three();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testThree  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testThree Test passed ✔︎');
+    }
+}
+
+// Check 4 is being added properly
+function testFour() {
+    input = ['8','add'];
+    var expected = ['8', 'divide','4'];
+    four();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testFour  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testFour Test passed ✔︎');
+    }
+}
+
+// Check 5 is being added properly
+function testFive() {
+    input = ['7','subtract'];
+    var expected = ['7', 'subtract','5'];
+    five();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testFour  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testFour Test passed ✔︎');
+    }
+}
+
+// Check 6 is being added properly
+function testSix() {
+    input = ['6','subtract'];
+    var expected = ['6', 'subtract','6'];
+    six();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testFour  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testFour Test passed ✔︎');
+    }
+}
+
+// Check 7 is being added properly
+function testSeven() {
+    input = ['6','subtract'];
+    var expected = ['6', 'subtract','7'];
+    seven();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testFour  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testFour Test passed ✔︎');
+    }
+}
+
+// Check 8 is being added properly
+function testEight() {
+    input = ['6','subtract'];
+    var expected = ['6', 'subtract','8'];
+    eight();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testFour  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testFour Test passed ✔︎');
+    }
+}
+
+// Check 9 is being added properly
+function testNine() {
+    input = ['6','subtract'];
+    var expected = ['6', 'subtract','9'];
+    nine();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testFour  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testFour Test passed ✔︎');
+    }
+}
+
+// Check 0 is being added properly
+function testZero() {
+    input = ['6','subtract'];
+    var expected = ['6', 'subtract','6'];
+    six();
+    var actual = input;
+    if (actual !== expected) {
+        console.log('testFour  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+      } else {
+        console.log('testFour Test passed ✔︎');
+    }
+}
+
+// Check the multiply button is working properly
+function checkMultiplyButton {
+
+}
+
+// Check the divide button is working properly
+function checkDivideButton {
+
+}
+
+// Check the add button is working properly
+function checkAddButton {
+
+}
+
+// Check the subtract button is working properly
+function checkSubtractButton {
+
+}
+
+// Check point button added properly
+function checkPointButton {
+
+}
+
+//check and current value are being cleared
+function checkClearButton {
+
+}
+
+//check the equals button is returning a value. 
+// Also that it's not working multiple times
+function checkEqualsButton {
+
+}
+
+
+// check that the history is being saved correctly
+function testHistorySaved() {
+    
+}
+// check the history is being cleared
+function testHistoryCleared() {
+
+}
+
+// Check the dislpay is always correct
+function testDisplayCorrect() {}
