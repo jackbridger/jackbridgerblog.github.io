@@ -101,35 +101,35 @@ function evaluateString(input) {
 }
 
 function one() {
-
+    input.push('1');
 }
 function two() {
-    
+    input.push('2');
 }
 function three() {
-    
+    input.push('3');
 }
 function four() {
-    
+    input.push('4');
 }
 function five() {
-    
+    input.push('5');
 }
 function six() {
-    
+    input.push('6');
 }
 function seven() {
-    
+    input.push('7');
 }
 function eight() {
-    
+    input.push('8');
 }
 function nine() {
-    
+    input.push('9');
 }
 
 function zero() {
-
+    input.push('0');
 }
 
 function point() {

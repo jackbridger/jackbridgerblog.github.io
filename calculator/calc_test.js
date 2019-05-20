@@ -157,12 +157,14 @@ function testOne() {
     var expected = ['1'];
     one();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testOne(  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testOne  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return -1;
+        }
     }
-    else {
-        console.log('testOne Test passed ✔︎');
-    }
+    console.log('testOne passed ✔︎');
+    return true;
 }
 // Check 2 is being added properly
 function testTwo() {
@@ -170,12 +172,13 @@ function testTwo() {
     var expected = ['1', 'multiply','2'];
     two();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testTwo  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testTwo Test passed ✔︎');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testTwo ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testTwo passed ✔︎');
 }
 
 // Check 3 is being added properly
@@ -184,26 +187,28 @@ function testThree() {
     var expected = ['4', 'divide','3'];
     three();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testThree  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testThree Test passed ✔︎');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testThree ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testThree passed ✔︎');
 }
 
 // Check 4 is being added properly
 function testFour() {
     input = ['8','add'];
-    var expected = ['8', 'divide','4'];
+    var expected = ['8', 'add','4'];
     four();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testFour  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testFour Test passed ✔︎');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testFour ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testFour passed ✔︎');
 }
 
 // Check 5 is being added properly
@@ -212,12 +217,13 @@ function testFive() {
     var expected = ['7', 'subtract','5'];
     five();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testFive  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testFive Test passed ✔︎');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testFive ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testFive passed ✔︎');
 }
 
 // Check 6 is being added properly
@@ -226,12 +232,13 @@ function testSix() {
     var expected = ['6', 'subtract','6'];
     six();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testSix  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testSix Test passed ✔︎');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testSix ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testSix passed ✔︎');
 }
 
 // Check 7 is being added properly
@@ -240,12 +247,13 @@ function testSeven() {
     var expected = ['6', 'subtract','7'];
     seven();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testSeven  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testSeven Test passed ✔︎');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testSeven ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testSeven passed ✔︎');
 }
 
 // Check 8 is being added properly
@@ -254,12 +262,13 @@ function testEight() {
     var expected = ['6', 'subtract','8'];
     eight();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testEight  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testEight Test passed ✔︎');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testEight ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testEight passed ✔︎');
 }
 
 // Check 9 is being added properly
@@ -268,38 +277,62 @@ function testNine() {
     var expected = ['6', 'subtract','9'];
     nine();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testNine  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testNine Test passed ✔︎');
+    var actual = input;
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testNine ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testNine passed ✔︎');
 }
 
 // Check 0 is being added properly
 function testZero() {
     input = ['6','subtract'];
-    var expected = ['6', 'subtract','6'];
-    six();
+    var expected = ['6', 'subtract','0'];
+    zero();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testZero  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testZero Test passed ✔︎');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('tesZero ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testZero passed ✔︎');
 
     input = ['0'];
     var expected = ['0'];
     zero();
     var actual = input;
-    if (actual !== expected) {
-        console.log('testZero testing double zero  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testZero testing double zero  Test passed ✔︎');
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('tesZero double zero ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testZero double zero passed ✔︎');
 }
+
+// function testPoint() {
+
+// }
+
+// Test all digits
+
+function testAllDigits() {
+    testOne()
+    testTwo()
+    testThree()
+    testFour()
+    testFive()
+    testSix()
+    testSeven()
+    testEight()
+    testNine()
+    testZero();
+}
+
 
 // Check the multiply button is working properly
 function testCheckMultiplyButton() {
