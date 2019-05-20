@@ -70,24 +70,19 @@ function simplifyString(input) {
 
 function evaluateString(input) {
 
+    console.log(input);
     for (var i = 0; i < input.length; i++) {
         if (input[i] === 'divide') {
             input[i] = (input[i-1] / input[i+1])
             input.splice(i+1,1);
             input.splice(i-1,1);
-            i = 0;
-        }
-    }
-
-    for (var i = 0; i < input.length; i++) {
-        if (input[i] === 'multiply') {
+            i = 0; }
+        else if (input[i] === 'multiply') {
             input[i] = (input[i-1] * input[i+1])
             input.splice(i+1,1);
             input.splice(i-1,1);
-            i = 0;
-        }
+            i = 0; }
     }
-
     for (var i = 0; i < input.length; i++) {
         if (input[i] === 'add') {
             input[i] = (input[i-1] + input[i+1])
@@ -95,16 +90,13 @@ function evaluateString(input) {
             input.splice(i-1,1);
             i = 0;
         }
-    }
-    for (var i = 0; i < input.length; i++) {
-        if (input[i] === 'subtract') {
+        else if (input[i] === 'subtract') {
             input[i] = (input[i-1] - input[i+1])
             input.splice(i+1,1);
             input.splice(i-1,1);
             i = 0;
         }
     }
-    console.log(input);
     return input[0];
 }
 

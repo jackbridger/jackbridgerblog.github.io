@@ -139,8 +139,8 @@ function testStringConversion(input) {
 }
 
 function testFullEvaluation(input) {
-    var input = [11,'add',5,'multiply',6, 'divide',2,'subtract',7];
-    var expected = 14;
+    var input = [11,'add',5,'multiply',6, 'divide',2,'subtract',7,'add',3, 'multiply',3,'multiply'];
+    var expected = 28;
     var actual = simplifyString(input);
 
     if (actual !== expected) {
