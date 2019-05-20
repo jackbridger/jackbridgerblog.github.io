@@ -58,15 +58,18 @@ function testOperands() {
 
 function testTwoDigits() {
     var input = ['2','add','5','7'];
-    var expected = ['2','add','57'];
+    var expected = [2,'add',57];
     var actual = simplifyString(input);
 
-    if (actual !== expected) {
+    console.log(actual);
 
-        console.log(' testTwoDigits ╳   ' + actual + ' should equal ' + expected + '  ╳');
-      } else {
-        console.log('testTwoDigits Test passed ✔︎');
-      }
+    for (i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log(' testTwoDigits ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
+    }
+    console.log('testTwoDigits Test passed ✔︎');
 }
 
 function testConvertInts() {
@@ -74,51 +77,57 @@ function testConvertInts() {
     var expected = [5,'add', 43];
     var actual = simplifyString(input);
 
-    if (actual !== expected) {
-
-        console.log('testConvertInts  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-      } else {
-        console.log('testConvertInts Test passed ✔︎');
-      }
+    for (i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testConvertInts  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
+    }
+    console.log('testConvertInts Test passed ✔︎');
 }
+
+
 
 function testConvertDecimals() {
-    var input = ['.','1','add','0','.','5'];
-    var expected = [0.1,'add',0.5];
+    var input = ['.','1','add','0','.','5','4'];
+    var expected = [0.1,'add',0.54];
     var actual = simplifyString(input);
 
-    if (actual !== expected) {
-        console.log('testConvertDecimals  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testConvertDecimals Test passed ✔︎');
+    for (i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testConvertDecimals  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testConvertDecimals Test passed ✔︎');
+
 }
 function testConvertMinus() {
-    var input = ['-','1','add','5'];
-    var expected = [-1,'add',5];
+    var input = ['-','1','add','-','5'];
+    var expected = [-1,'add',-5];
     var actual = simplifyString(input);
 
-    if (actual !== expected) {
-        console.log('testConvertMinus  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testConvertMinus Test passed ✔︎');
-      }
+    for (i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testConvertMinus  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
+    }
+    console.log('testConvertMinus Test passed ✔︎');
 }
 
 function testRemoveLastOp() {
-    var input = ['2','add','5','multiply'];
+    var input = ['2','add','5','multiply','add','subtract'];
     var expected = [2,'add',5];
     var actual = simplifyString(input);
 
-    if (actual !== expected) {
-        console.log('testRemoveLastOp  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else 
-    {
-        console.log('testRemoveLastOp Test passed ✔︎');
+    for (i = 0; i < actual.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testRemoveLastOp  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('testRemoveLastOp Test passed ✔︎');
 }
 
 function testStringConversion(input) {
