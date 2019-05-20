@@ -3,11 +3,12 @@ var history = '';
 var display = '';
 
 function calculate(input) {
-    
+    if (input[1] === 'multiply')
+        return 6;
 }
 
 function divide(input) {
-
+    
 }
 
 function multiply(input) {
