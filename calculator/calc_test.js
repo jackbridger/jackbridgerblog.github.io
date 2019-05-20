@@ -1,4 +1,4 @@
-// Take in a string with multiply signalled. Return the result of the multiplication.
+// Take in a string with multiply signalled on the middle char. Return the result of the multiplication.
 function testSimpleMultiply() {
     var input = ['2','multiply','3'];
     var expected = 6; 
