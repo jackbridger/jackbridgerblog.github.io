@@ -326,6 +326,7 @@ function testPoint() {
         }
     }
     console.log('testPoint basic passed ✔︎');
+
     input = ['6','.'];
     var expected = ['6','.'];
     point();
@@ -337,6 +338,18 @@ function testPoint() {
         }
     }
     console.log('testPoint doublepoint passed ✔︎');
+
+    input = [];
+    var expected = ['0','.'];
+    point();
+    var actual = input;
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testPoint zero point╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
+    }
+    console.log('testPoint zero point passed ✔︎');
 }
 
 // Test all digits

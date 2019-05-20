@@ -137,6 +137,10 @@ function point() {
     const recent_value = input[input.length-1];
     if (pure_digits.includes(recent_value)) 
         input.push('.');
+    else if (input.length === 0) {
+        input.push('0');
+        input.push('.');
+    }
 }
 
 function equals() {
