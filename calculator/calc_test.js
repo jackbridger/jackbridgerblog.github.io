@@ -1,4 +1,4 @@
-// Take in a string with multiply signalled. Return the result of the multiplication. 
+// Take in a string with multiply signalled. Return the result of the multiplication.
 function testSimpleMultiply() {
     var input = ['2','multiply','3'];
     var expected = 6; 
@@ -291,10 +291,9 @@ function testZero() {
         console.log('testZero testing double zero  Test passed ✔︎');
     }
 }
-}
 
 // Check the multiply button is working properly
-function testCheckMultiplyButton {
+function testCheckMultiplyButton() {
     input = [];
     var expected_simple = ['multiply'];
     multiply();
@@ -319,7 +318,7 @@ function testCheckMultiplyButton {
 }
 
 // Check the divide button is working properly
-function testCheckDivideButton {
+function testCheckDivideButton() {
     input = [];
     var expected_simple = ['divide'];
     divide();
@@ -344,7 +343,7 @@ function testCheckDivideButton {
 }
 
 // Check the add button is working properly
-function testCheckAddButton {
+function testCheckAddButton() {
     input = [];
     var expected_simple = ['add'];
     add();
@@ -369,7 +368,7 @@ function testCheckAddButton {
 }
 
 // Check the subtract button is working properly
-function testCheckSubtractButton {
+function testCheckSubtractButton() {
     input = [];
     var expected_simple = ['subtract'];
     subtract();
@@ -394,18 +393,18 @@ function testCheckSubtractButton {
 }
 
 // Check point button added properly
-function checkPointButton {
+function checkPointButton() {
 
 }
 
 //check and current value are being cleared
-function checkClearButton {
+function checkClearButton() {
 
 }
 
 //check the equals button is returning a value. 
 // Also that it's not working multiple times
-function checkEqualsButton {
+function checkEqualsButton() {
 
 }
 
