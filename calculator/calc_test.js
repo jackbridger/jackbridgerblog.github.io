@@ -314,9 +314,30 @@ function testZero() {
     console.log('testZero double zero passed ✔︎');
 }
 
-// function testPoint() {
-
-// }
+function testPoint() {
+    input = ['6'];
+    var expected = ['6','.'];
+    point();
+    var actual = input;
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testPoint basic╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
+    }
+    console.log('testPoint basic passed ✔︎');
+    input = ['6','.'];
+    var expected = ['6','.'];
+    point();
+    var actual = input;
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testPoint doublepoint╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
+    }
+    console.log('testPoint doublepoint passed ✔︎');
+}
 
 // Test all digits
 
@@ -331,6 +352,7 @@ function testAllDigits() {
     testEight()
     testNine()
     testZero();
+    testPoint();
 }
 
 

@@ -133,7 +133,10 @@ function zero() {
 }
 
 function point() {
-
+    const pure_digits = ['1','2','3','4','5','6','7','8','9','0'];
+    const recent_value = input[input.length-1];
+    if (pure_digits.includes(recent_value)) 
+        input.push('.');
 }
 
 function equals() {
