@@ -352,6 +352,22 @@ function testPoint() {
     console.log('testPoint zero point passed ✔︎');
 }
 
+
+function testClear() {
+    input = ['6','add'];
+    var expected = [];
+    clear();
+    var actual = input;
+
+    for (var i = 0; i < expected.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('clear test╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
+    }
+    console.log('clear test passed ✔︎');
+}
+
 // Test all digits
 
 function testAllDigits() {
@@ -366,6 +382,7 @@ function testAllDigits() {
     testNine()
     testZero();
     testPoint();
+    testClear();
 }
 
 
@@ -461,13 +478,16 @@ function testCheckSubtractButton() {
     var expected_simple = ['6', 'subtract'];
     subtract();
     var actual_simple = input;
-    if (actual !== expected) {
+    if (actual_simple !== expected) {
         console.log('double testCheckSubtractButton   ╳   ' + actual + ' should equal ' + expected + '  ╳');
     } 
     else {
         console.log('double testCheckSubtractButton  Test passed ✔︎');
     }
 }
+
+
+
 
 // Check point button added properly
 function checkPointButton() {

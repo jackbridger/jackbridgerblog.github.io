@@ -148,5 +148,6 @@ function equals() {
 }
 
 function clear() {
+    input = [];
 
 }
