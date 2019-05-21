@@ -21,9 +21,9 @@ function divide(input) {
     return input[0] / input[2];
 }
 
-function multiply(input) {
-    return input[0] * input[2];
-}
+// function multiply() {
+//     return;
+// }
 
 function subtract(input) {
     return input[0] - input[2]
@@ -33,7 +33,7 @@ function add(input) {
     return parseFloat(input[0]) + parseFloat(input[2]);
 }
 
-function simplifyString(input) {
+function simplifyString() {
     var firstDigit = true;
     const operands = ['add','multiply','subtract','divide'];
     const digits = ['1','2','3','4','5','6','7','8','9','0','.','-'];
@@ -64,7 +64,7 @@ function simplifyString(input) {
         }
     }
 
-
+    document.getElementById('display').innerHTML = input;
     return evaluateString(input);
 }
 
@@ -100,36 +100,47 @@ function evaluateString(input) {
     return input[0];
 }
 
-function one() {
+function one_button() {
+    alert('hello world');
     input.push('1');
+    simplifyString();
 }
 function two() {
     input.push('2');
+    simplifyString();
 }
 function three() {
     input.push('3');
+    simplifyString();
 }
 function four() {
     input.push('4');
+    simplifyString();
 }
 function five() {
     input.push('5');
+    simplifyString();
 }
 function six() {
     input.push('6');
+    simplifyString();
 }
 function seven() {
     input.push('7');
+    simplifyString();
 }
 function eight() {
     input.push('8');
+    simplifyString();
 }
 function nine() {
     input.push('9');
+    simplifyString();
 }
 
 function zero() {
     input.push('0');
+    simplifyString();
 }
 
 function point() {
@@ -144,10 +155,10 @@ function point() {
 }
 
 function equals() {
-
+    evaluateString();
 }
 
 function clear() {
     input = [];
-
+    simplifyString();
 }

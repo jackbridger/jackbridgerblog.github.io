@@ -1,3 +1,76 @@
 h1 {
     color: red;
 }
+
+body {
+    box-sizing: border-box;
+
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+}
+.calc_body {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 0 1 60%;
+    background-color: burlywood
+}
+#display, .keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+    justify-content: flex-start;
+}
+
+#display {
+    height: 90px;
+    border: 1px solid black;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3em;
+    background: #000;
+    color:#fff;
+    padding:0 10px;
+    
+}
+
+.button { 
+    display:flex;
+    flex: 1 1;
+    min-width: 24.8%;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border: 1px solid black;
+    border-top:none;
+    border-left:none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top,#d2d2d2,#ddd);
+    font-size:2em;
+}
+
+.equals, .clear-button {
+    flex: 0 1;
+    min-width: 50%;
+}
+
+.keyboard {
+
+}
+
+.row-1 {
+
+}
+
+.clear-button {
+
+}
+.divide-button { 
+
+}
+.multiply-button { 
+
+}
