@@ -31,7 +31,8 @@ function testSimpleSubtract() {
 
     if (actual !== expected) {
         console.log('testSimpleSubtract ╳   ' + actual + ' should equal ' + expected + '  ╳');
-      } else {
+    } 
+    else {
         console.log('testSimpleSubtract Test passed ✔︎');
     }
 }
@@ -61,8 +62,6 @@ function testTwoDigits() {
     var expected = [2,'add',57];
     var actual = simplifyString(input);
 
-    console.log(actual);
-
     for (i = 0; i < expected.length; i++) {
         if (actual[i] !== expected[i]) {
             console.log(' testTwoDigits ╳   ' + actual + ' should equal ' + expected + '  ╳');
@@ -85,8 +84,6 @@ function testConvertInts() {
     }
     console.log('testConvertInts Test passed ✔︎');
 }
-
-
 
 function testConvertDecimals() {
     var input = ['.','1','add','0','.','5','4'];
@@ -139,16 +136,20 @@ function testStringConversion(input) {
 }
 
 function testFullEvaluation(input) {
-    var input = [11,'add',5,'multiply',6, 'divide',2,'subtract',7,'add',3, 'multiply',3,'multiply'];
+    var input = [11,'add',5,'multiply',6, 'divide',2,'.','.','-','subtract',7,'add',3, 'multiply',3,'multiply'];
+    console.log('input is' + input );
     var expected = 28;
     var actual = simplifyString(input);
 
-    if (actual !== expected) {
-        console.log('testFullEvaluation(  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-    } 
-    else {
-        console.log('testFullEvaluation Test passed ✔︎');
+    for (i = 0; i < actual.length; i++) {
+        if (actual[i] !== expected[i]) {
+            console.log('testFullEvaluation(  ╳   ' + actual + ' should equal ' + expected + '  ╳');
+            return
+        }
     }
+    console.log('input is' + input );
+    console.log('testFullEvaluation Test passed ✔︎');
+    console.log('output is ' + actual);
 }
 
 // Check 1 is being added properly
@@ -157,15 +158,16 @@ function testOne() {
     var expected = ['1'];
     one();
     var actual = input;
-    for (var i = 0; i < expected.length; i++) {
+    for (i = 0; i < input.length; i++) {
         if (actual[i] !== expected[i]) {
-            console.log('testOne  ╳   ' + actual + ' should equal ' + expected + '  ╳');
-            return -1;
+            console.log('testRemoveLastOp  ╳   ' + input + ' should equal ' + expected + '  ╳');
+            return
         }
     }
     console.log('testOne passed ✔︎');
     return true;
 }
+
 // Check 2 is being added properly
 function testTwo() {
     input = ['1','multiply'];
