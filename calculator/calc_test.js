@@ -137,7 +137,7 @@ function testStringConversion(input) {
 
 function testFullEvaluation(input) {
     var input = [11,'add',5,'multiply',6, 'divide',2,'.','.','-','subtract',7,'add',3, 'multiply',3,'multiply'];
-    console.log('input is' + input );
+    console.log('input is ' + input );
     var expected = 28;
     var actual = simplifyString(input);
 
@@ -177,7 +177,7 @@ function testTwo() {
     for (var i = 0; i < expected.length; i++) {
         if (actual[i] !== expected[i]) {
             console.log('testTwo ╳   ' + actual + ' should equal ' + expected + '  ╳');
-            return
+            return;
         }
     }
     console.log('testTwo passed ✔︎');
@@ -192,7 +192,7 @@ function testThree() {
     for (var i = 0; i < expected.length; i++) {
         if (actual[i] !== expected[i]) {
             console.log('testThree ╳   ' + actual + ' should equal ' + expected + '  ╳');
-            return
+            return;
         }
     }
     console.log('testThree passed ✔︎');
@@ -525,3 +525,5 @@ function testDisplayCorrect() {}
 function testSavedValueOperand() {
 
 }
+
+function 

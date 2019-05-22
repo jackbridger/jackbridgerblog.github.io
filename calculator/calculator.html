@@ -11,30 +11,43 @@
     <title>Calculator</title>
 </head>
 <body>
-    <main class="calc_body">
-        <div id="display">0</div>
-        <div class="keyboard">
-            <button onclick="clear()" class="button operator clear-button">AC</button>
-            <button onclick="divide()" class="button operator divide-button">/</button>
-            <button onclick="multiply()" class="button operator multiply-button">X</button>
-            <button onclick="seven()" class="button number seven">7</button>
-            <button onclick="eight()" class="button number eight">8</button>
-            <button onclick="nine()" class="button number nine">9</button>
-            <button onclick="subtract()" class="button operator">-</button>
-            <button onclick="four()" class="button number four">4</button>
-            <button onclick="five()" class="button number five">5</button>
-            <button onclick="six()" class="button number six">6</button>
-            <button onclick="add()" class="button number add">+</button>
-            <button onclick="one_button()" class="button number one">1</button>
-            <button onclick="two()" class="button number two">2</button>
-            <button onclick="three()" class="button number three">3</button>
-            <button onclick="point()" class="button number point">.</button>
-            <button onclick="zero()" class="button number zero">0</button>
-            <button onclick="equals()" class="button operator equals">=</button>
+    <h1>My cool calculator</h1>
+    <main id="calc_body">
+            <div class="row">
+                    <div class="column" id="calc-display-history">0</div>
+                </div>
+        <div class="row">
+            <div class="column" id="calc-display-val">0</div>
+        </div>
+        <div class="row">
+            <div class="calc-btn calc-btn-num column" id="calc-clear">AC</div>            
+            <div class="calc-btn calc-btn-operator column" id="calc-divide">/</div>
         </div>
 
+        <div class="row">
+            <div class="calc-btn calc-btn-num column" id="calc-seven">7</div>            
+            <div class="calc-btn calc-btn-num column" id="calc-eight">8</div>
+            <div class="calc-btn calc-btn-num column" id="calc-nine">9</div>
+            <div class="calc-btn calc-btn-operator column" id="calc-multiply">x</div>
+        </div>
 
-
+        <div class="row">
+                <div class="calc-btn calc-btn-num column" id="calc-four">4</div>            
+                <div class="calc-btn calc-btn-num column" id="calc-five">5</div>
+                <div class="calc-btn calc-btn-num column" id="calc-six">6</div>
+                <div class="calc-btn calc-btn-operator column" id="calc-minus">-</div>
+        </div>
+        <div class="row">
+                <div class="calc-btn calc-btn-num column" id="calc-one">1</div>            
+                <div class="calc-btn calc-btn-num column" id="calc-two">2</div>
+                <div class="calc-btn calc-btn-num column" id="calc-three">3</div>
+                <div class="calc-btn calc-btn-operator column" id="calc-add">+</div>
+        </div>
+        <div class="row">
+                <div class="calc-btn calc-btn-num column" id="calc-zero">0</div>
+                <div class="calc-btn calc-btn-num column" id="calc-point">.</div>
+                <div class="calc-btn calc-btn-operator column" id="calc-equals">=</div>
+        </div>
 
     </main>
     

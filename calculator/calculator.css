@@ -1,76 +1,73 @@
-h1 {
-    color: red;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
-    box-sizing: border-box;
-
-    min-height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: flex-start;
-    
-    
-}
-.calc_body {
-    display:flex;
-    flex-wrap: wrap;
-    flex: 0 1 60%;
-    background-color: burlywood
-}
-#display, .keyboard {
+    font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    flex: 0 1 100%;
-    justify-content: flex-start;
-}
-
-#display {
-    height: 90px;
-    border: 1px solid black;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    font-size: 3em;
-    background: #000;
-    color:#fff;
-    padding:0 10px;
-    
 }
-
-.button { 
-    display:flex;
-    flex: 1 1;
-    min-width: 24.8%;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    border: 1px solid black;
-    border-top:none;
-    border-left:none;
+.calc-btn {
+    background-color: silver;
+    color: black;
+    width: 25px;
+    height: 45px;
+    border: 1px solid grey;
+    text-align: center;
     cursor: pointer;
-    background: -webkit-linear-gradient(top,#d2d2d2,#ddd);
-    font-size:2em;
+    font-size: 32px;
+    font-weight: 100;
+    padding-top: 3px;
 }
 
-.equals, .clear-button {
-    flex: 0 1;
-    min-width: 50%;
+.calc-btn:hover {
+    background-color: orange;
 }
 
-.keyboard {
-
+.row { 
+    display: table;
+    table-layout: fixed;
+    width: 200px;
 }
 
-.row-1 {
-
+.column {
+    display: table-cell;
 }
 
-.clear-button {
-
+#calc-equals {
+width: 52px;
 }
-.divide-button { 
-
+#calc-clear { 
+    width: 79px;
 }
-.multiply-button { 
 
+#calc-display-val,#calc-display-history {
+    text-align: right;
+    border: 1px 1px 0px 1px solid grey;
+    padding: 5px;    
+    background-color: darkgrey;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#calc-display-val {
+    font-size: 32px;
+    height: 20px;
+}
+
+#calc-display-history {
+    height: 10px;
+    font-size: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+.calc-btn-operator {
+    background-color: orange;
+    color: white;
+}
+
+#calc-equals {
+    border-radius: 0px 0px 7px 0px;
+}
+
+#calc-zero {
+    border-radius: 0px 0px 0px 7px;
 }
