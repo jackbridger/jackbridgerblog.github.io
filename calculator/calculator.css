@@ -1,9 +1,4 @@
-.calculator-area {
-    display: grid;
-    grid-template-columns: repeat(4,100px);
-    grid-template-rows: minmax(120px, auto) repeat(5,100px);
-    justify-content: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 .span-two-row {
     grid-row: span 2;
@@ -14,7 +9,71 @@
 .span-four-col {
     grid-column: span 4;
 }
+:root {
+    --background-outer: #F8FFE5;
+    --background-calc: #08415C;
+    --equals-button: #06D6A0;
+    --ac-button: #c7004c;
+    --number-buttons: #1B9AAA;
+    --operator-buttons: #FFC43D;
+    --hover-color: #9AADBF;
+    --text-color: white;
+    --active-color: black;
+  }
 
-button, .display {
-    outline: 5px dotted green;
+
+body {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: var(--background-outer);
+    font-family: 'Roboto', sans-serif;
+}
+button {
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+button:active {
+    color: var(--active-color);
+}
+button:focus {
+    outline: 1px solid var(--background-calc);
+}
+
+.calculator-area {
+    background-color: var(--background-calc);
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+    justify-content: center;
+}
+
+.display {
+    color: var(--text-color);
+    align-items: flex-end;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.display-main {
+    font-size: 30px;
+}
+
+
+.btn-number {
+    background-color: var(--number-buttons);
+}
+.btn-operator {
+    background-color: var(--operator-buttons);
+}
+
+.btn-ac {
+    background-color: var(--ac-button);
+}
+
+.btn-equals {
+    background-color: var(--equals-button);
 }
