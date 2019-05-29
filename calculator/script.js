@@ -14,3 +14,12 @@ class Calculator {
 var calculator = new Calculator();
 
 window.onload = calculator.update_calc();
+
+const allNumberBtns = document.querySelectorAll('.btn-number');
+
+allNumberBtns.forEach(btn =>{
+    btn.addEventListener('click', () => { 
+        calculator.mainDisplay = btn.innerHTML;
+        calculator.update_calc();
+    });
+});
