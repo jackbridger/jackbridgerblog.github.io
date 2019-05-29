@@ -23,7 +23,7 @@ class Calculator {
         else if (buttonPressed === '.' && this.mainDisplay.includes('.')) {
             this.mainDisplay = this.mainDisplay;
         }
-        else if (this.justReturned === true) {
+        else if (this.justReturned === true && this.mainDisplay.includes('-')) {
             this.mainDisplay += buttonPressed;
             this.historyDisplay += this.mainDisplay;
             this.justReturned = false;
@@ -40,7 +40,12 @@ class Calculator {
         this.update_calc();
     }
     append_operator(buttonPressed) {
-        if (buttonPressed === '0'||buttonPressed === '×'|| buttonPressed === '-'|| buttonPressed === '+'|| buttonPressed === '÷'){
+        if ((buttonPressed === '0'||buttonPressed === '×'|| buttonPressed === '-'|| buttonPressed === '+'|| buttonPressed === '÷') && (this.historyDisplay.includes('+') || this.historyDisplay.includes('-')  || this.historyDisplay.includes('×')  || this.historyDisplay.includes('÷')   )) {
+            this.equals();
+            this.mainDisplay = buttonPressed;
+            this.update_calc();
+        }
+        else if (buttonPressed === '0'||buttonPressed === '×'|| buttonPressed === '-'|| buttonPressed === '+'|| buttonPressed === '÷'){
             this.mainDisplay = buttonPressed;
             this.update_calc();
         }
