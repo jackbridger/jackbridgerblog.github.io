@@ -1,31 +1,37 @@
 class Calculator {
     constructor() {
         this.mainDisplay = '0';
-        this.historyDisplay = null;
+        this.historyDisplay = '';
         this.firstDigits = null;
         this.operator = null;
         this.SecondDigits = null;
     }
 
     update_calc() {
+
         document.getElementsByClassName('display-main')[0].innerHTML = this.mainDisplay;
-        document.getElementsByClassName('display-history')[0].innerHTML = this.history;
+        document.getElementsByClassName('display-history')[0].innerHTML = this.historyDisplay;
     }
     append_number(buttonPressed) {
         if (this.mainDisplay === '0'){
-            this.mainDisplay = buttonPressed;}
+            this.historyDisplay += buttonPressed; 
+            this.mainDisplay = buttonPressed;
+        }
         else if (this.mainDisplay === 'X'|| this.mainDisplay === '-'|| this.mainDisplay === '+'|| this.mainDisplay === '/'){
-                this.mainDisplay = buttonPressed;
+            this.historyDisplay = this.historyDisplay + ' ' + this.mainDisplay + ' ' + buttonPressed;    
+            this.mainDisplay = buttonPressed;
             }
         else if (buttonPressed === '.' && this.mainDisplay.includes('.')) {
             this.mainDisplay = this.mainDisplay;
         }
-            else {
+        else {
+            this.historyDisplay += buttonPressed; 
             this.mainDisplay += buttonPressed;
         }
         this.update_calc();
     }
     clear() {
+        this.historyDisplay = '';
         this.mainDisplay = '0';
         this.update_calc();
     }
