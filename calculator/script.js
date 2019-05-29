@@ -50,7 +50,9 @@ class Calculator {
     }
 
     equals() {
-        var return_val = eval(this.historyDisplay);
+        var toBeCalculated = this.historyDisplay;
+        toBeCalculated = toBeCalculated.replace('X','*')
+        var return_val = eval(toBeCalculated);
         this.mainDisplay = return_val;
         this.update_calc();
     }
