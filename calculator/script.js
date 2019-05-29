@@ -15,7 +15,8 @@ class Calculator {
     }
     append_number(buttonPressed) {
         if (this.mainDisplay === '0'){
-            this.historyDisplay += buttonPressed; 
+           
+            this.historyDisplay = buttonPressed;
             this.mainDisplay = buttonPressed;
         }
         else if (this.mainDisplay === '-' && !this.justReturned) {
