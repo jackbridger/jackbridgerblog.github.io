@@ -5,6 +5,7 @@ class Calculator {
         this.firstDigits = null;
         this.operator = null;
         this.SecondDigits = null;
+        this.justReturned = false;
     }
 
     update_calc() {
@@ -17,9 +18,11 @@ class Calculator {
             this.historyDisplay += buttonPressed; 
             this.mainDisplay = buttonPressed;
         }
-        else if (this.mainDisplay === '-') {
+        else if (this.mainDisplay === '-' && !this.justReturned) {
             this.mainDisplay += buttonPressed;
-            this.historyDisplay = this.mainDisplay; 
+            
+            // if (!this.justReturned)
+            //     this.historyDisplay += this.mainDisplay ; 
         }
         else if (this.mainDisplay === 'X'|| this.mainDisplay === '+'|| this.mainDisplay === '/'){
             this.historyDisplay = this.historyDisplay + ' ' + this.mainDisplay + ' ' + buttonPressed;    
@@ -27,6 +30,11 @@ class Calculator {
             }
         else if (buttonPressed === '.' && this.mainDisplay.includes('.')) {
             this.mainDisplay = this.mainDisplay;
+        }
+        else if (this.justReturned === true) {
+            this.mainDisplay += buttonPressed;
+            this.historyDisplay += this.mainDisplay;
+            this.justReturned = false;
         }
         else {
             this.historyDisplay += buttonPressed; 
@@ -54,15 +62,17 @@ class Calculator {
     }
 
     equals() {
-        if (this.historyDisplay === '')
-            return;
+        if (this.historyDisplay === '') {
+            return;}
         
         var toBeCalculated = this.historyDisplay;
         toBeCalculated = toBeCalculated.replace('X','*')
         var return_val = eval(toBeCalculated);
         this.mainDisplay = return_val;
         this.historyDisplay = return_val;
+        this.justReturned = true;
         this.update_calc();
+
     }
 
 
