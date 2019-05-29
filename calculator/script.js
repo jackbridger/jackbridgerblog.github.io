@@ -49,6 +49,12 @@ class Calculator {
 
     }
 
+    equals() {
+        var return_val = eval(this.historyDisplay);
+        this.mainDisplay = return_val;
+        this.update_calc();
+    }
+
 
 }
 
@@ -78,3 +84,10 @@ allOperatorBtns.forEach(btn =>{
         calculator.append_operator(btn.innerHTML);
     });
 });
+
+const equalsBtn = document.querySelector('.btn-equals');
+equalsBtn.addEventListener('click', 
+    () => {
+        calculator.equals()
+    }
+);
