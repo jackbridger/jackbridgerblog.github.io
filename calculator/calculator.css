@@ -21,7 +21,6 @@
     --active-color: black;
   }
 
-
 body {
     align-items: center;
     flex-direction: column;
@@ -31,7 +30,7 @@ body {
 }
 button {
     color: var(--text-color);
-    font-size: 30px;
+    font-size: 40px;
 }
 
 button:active {
@@ -48,6 +47,7 @@ button:focus {
     grid-template-columns: repeat(4,100px);
     grid-template-rows: minmax(120px, auto) repeat(5,100px);
     justify-content: center;
+    cursor: pointer;
 }
 
 .display {
@@ -57,21 +57,25 @@ button:focus {
     display: flex;
     flex-direction: column;
     padding: 10px;
-}
-.display-main {
-    font-size: 30px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
+.display-main {
+    font-size: 40px;
+}
 
 .btn-number {
     background-color: var(--number-buttons);
 }
-.btn-operator {
+.btn-operator, .btn-equals {
     background-color: var(--operator-buttons);
+    font-size: 65px;
 }
 
 .btn-ac {
     background-color: var(--ac-button);
+    font-size: 45px;
 }
 
 .btn-equals {

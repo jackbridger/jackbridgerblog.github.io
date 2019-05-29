@@ -2,30 +2,21 @@ class Calculator {
     constructor() {
         this.mainDisplay = '0';
         this.historyDisplay = '';
-        this.firstDigits = null;
-        this.operator = null;
-        this.SecondDigits = null;
         this.justReturned = false;
     }
-
     update_calc() {
-
         document.getElementsByClassName('display-main')[0].innerHTML = this.mainDisplay;
         document.getElementsByClassName('display-history')[0].innerHTML = this.historyDisplay;
     }
     append_number(buttonPressed) {
         if (this.mainDisplay === '0'){
-           
             this.historyDisplay = buttonPressed;
             this.mainDisplay = buttonPressed;
         }
         else if (this.mainDisplay === '-' && !this.justReturned) {
             this.mainDisplay += buttonPressed;
-            
-            // if (!this.justReturned)
-            //     this.historyDisplay += this.mainDisplay ; 
         }
-        else if (this.mainDisplay === 'X'|| this.mainDisplay === '+'|| this.mainDisplay === '/'){
+        else if (this.mainDisplay === '×'|| this.mainDisplay === '+'|| this.mainDisplay === '÷'){
             this.historyDisplay = this.historyDisplay + ' ' + this.mainDisplay + ' ' + buttonPressed;    
             this.mainDisplay = buttonPressed;
             }
@@ -48,9 +39,8 @@ class Calculator {
         this.mainDisplay = '0';
         this.update_calc();
     }
-
     append_operator(buttonPressed) {
-        if (buttonPressed === '0'||buttonPressed === 'X'|| buttonPressed === '-'|| buttonPressed === '+'|| buttonPressed === '/'){
+        if (buttonPressed === '0'||buttonPressed === '×'|| buttonPressed === '-'|| buttonPressed === '+'|| buttonPressed === '÷'){
             this.mainDisplay = buttonPressed;
             this.update_calc();
         }
@@ -61,27 +51,20 @@ class Calculator {
         }
 
     }
-
     equals() {
         if (this.historyDisplay === '') {
             return;}
         
         var toBeCalculated = this.historyDisplay;
-        toBeCalculated = toBeCalculated.replace('X','*')
+        toBeCalculated = toBeCalculated.replace('×','*');
+        toBeCalculated = toBeCalculated.replace('÷','/');
         var return_val = eval(toBeCalculated);
         this.mainDisplay = return_val;
         this.historyDisplay = return_val;
         this.justReturned = true;
         this.update_calc();
-
     }
-
-
 }
-
-var calculator = new Calculator();
-
-window.onload = calculator.update_calc();
 
 const allNumberBtns = document.querySelectorAll('.btn-number');
 allNumberBtns.forEach(btn =>{
@@ -112,3 +95,6 @@ equalsBtn.addEventListener('click',
         calculator.equals()
     }
 );
+
+var calculator = new Calculator();
+window.onload = calculator.update_calc();
