@@ -6,8 +6,16 @@ class Calculator {
     update_calc() {
         document.getElementsByClassName('display-main')[0].innerHTML = this.mainDisplay;
     }
-    append_value(buttonPressed) {
-
+    append_number(buttonPressed) {
+        if (this.mainDisplay === '0'){
+            this.mainDisplay = buttonPressed;}
+        else if (buttonPressed === '.' && this.mainDisplay.includes('.')) {
+            this.mainDisplay = this.mainDisplay;
+        }
+            else {
+            this.mainDisplay += buttonPressed;
+        }
+        this.update_calc();
     }
     clear() {
         this.mainDisplay = '0';
@@ -27,7 +35,7 @@ const allNumberBtns = document.querySelectorAll('.btn-number');
 
 allNumberBtns.forEach(btn =>{
     btn.addEventListener('click', () => { 
-        calculator.mainDisplay = btn.innerHTML;
+        calculator.append_number(btn.innerHTML);
         calculator.update_calc();
     });
 });
