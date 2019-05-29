@@ -17,7 +17,11 @@ class Calculator {
             this.historyDisplay += buttonPressed; 
             this.mainDisplay = buttonPressed;
         }
-        else if (this.mainDisplay === 'X'|| this.mainDisplay === '-'|| this.mainDisplay === '+'|| this.mainDisplay === '/'){
+        else if (this.mainDisplay === '-') {
+            this.mainDisplay += buttonPressed;
+            this.historyDisplay = this.mainDisplay; 
+        }
+        else if (this.mainDisplay === 'X'|| this.mainDisplay === '+'|| this.mainDisplay === '/'){
             this.historyDisplay = this.historyDisplay + ' ' + this.mainDisplay + ' ' + buttonPressed;    
             this.mainDisplay = buttonPressed;
             }
@@ -50,10 +54,14 @@ class Calculator {
     }
 
     equals() {
+        if (this.historyDisplay === '')
+            return;
+        
         var toBeCalculated = this.historyDisplay;
         toBeCalculated = toBeCalculated.replace('X','*')
         var return_val = eval(toBeCalculated);
         this.mainDisplay = return_val;
+        this.historyDisplay = return_val;
         this.update_calc();
     }
 
