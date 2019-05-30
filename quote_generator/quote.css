@@ -6,6 +6,7 @@
   }
 
 
+
 body {
     background-color: var(--main-bg-color);
     transition: background-color .5s;
@@ -15,6 +16,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 80vh;
+}
+
+h1 {
+    color: var(--main-font-color);
+    font-size: 50px;
 }
 
 #quotebox {
