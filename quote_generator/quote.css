@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+
 }
 
 h1 {
@@ -25,12 +25,11 @@ h1 {
 
 #quotebox {
     background-color: var(--main-font-color);
-    min-height: 100px;
     border-radius: 5px;
     padding: 20px;
     display: grid;
-    grid-template-columns: 20px 60px 150px 150px 150px 60px 20px;
-    grid-template-rows: auto  10px 10px 40px;    
+    grid-template-columns: 5vh 10vh 5vh 30vh 5vh 10vh 5vh;
+    grid-template-rows: auto  5vh 5vh 5vh;    
 }
 
 .speakerquote {
