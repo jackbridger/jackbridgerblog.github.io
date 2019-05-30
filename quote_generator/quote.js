@@ -3,29 +3,32 @@ var color_choices = [["#69d2e7","#a7dbd8","#e0e4cc","#f38630","#fa6900"],["#fe43
 var ran_x = 0;
 var ran_y = 0;
 var color_button = document.querySelector('.newquote');
+var request;
+var chuck_norris_quote;
+var quotetext;
 
 // Create a request variable and assign a new XMLHttpRequest object to it.
-
-    var request = new XMLHttpRequest()
+function get_quote() {
+    request = new XMLHttpRequest()
 
     // Open a new connection, using the GET request on the URL endpoint
     request.open('GET', 'http://api.icndb.com/jokes/random?firstName=Mark&amp&lastName=Bridger', true)
 
     request.onload = function () {
-    chuck_norris_quote = JSON.parse(this.response)
+        chuck_norris_quote = JSON.parse(this.response)
+        chuck_norris_quote = chuck_norris_quote['value']['joke'];
+        console.log(chuck_norris_quote);
+        quotetext = document.querySelector('.speakerquote');
+        quotetext.innerHTML = chuck_norris_quote;
     }
 
     // Send request
     request.send()
-
-
-var quotetext = document.getElementById('speakerquote');
-
-window.onload = function() {
-    quotetext.innerHTML = chuck_norris_quote['value']['joke'];
-    set_color_button();
-    set_colors();
 }
+
+
+
+
 
 
 
@@ -42,5 +45,17 @@ function set_colors() {
 function set_color_button() {
     color_button.addEventListener('click',function() 
     {
-        window.reload;
+        get_quote();
+        set_colors();
     })}
+
+
+
+window.onload = function() {
+    
+    get_quote();
+    console.log(chuck_norris_quote);
+    
+    set_color_button();
+    set_colors();
+}
