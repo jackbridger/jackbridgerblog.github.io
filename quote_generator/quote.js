@@ -6,6 +6,7 @@ var color_button = document.querySelector('.newquote');
 var request;
 var chuck_norris_quote;
 var quotetext;
+var buttoncreated = false;
 
 // Create a request variable and assign a new XMLHttpRequest object to it.
 function get_quote() {
@@ -20,6 +21,18 @@ function get_quote() {
         console.log(chuck_norris_quote);
         quotetext = document.querySelector('.speakerquote');
         quotetext.innerHTML = chuck_norris_quote;
+        
+
+        if (!buttoncreated) {
+        twttr.widgets.createShareButton(
+            'www.google.com',
+            document.getElementById('tweet'),
+            {
+              text: chuck_norris_quote
+            }
+          );
+          buttoncreated = true;
+        }
     }
 
     // Send request
@@ -59,3 +72,4 @@ window.onload = function() {
     set_color_button();
     set_colors();
 }
+

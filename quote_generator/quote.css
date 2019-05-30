@@ -8,6 +8,7 @@
 
 body {
     background-color: var(--main-bg-color);
+    transition: background-color .5s;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
@@ -22,45 +23,39 @@ body {
     border-radius: 5px;
     padding: 20px;
     display: grid;
-    grid-template-columns: 180px 180px 180px;
-    grid-template-rows: auto 50px 40px;    
+    grid-template-columns: 20px 60px 150px 150px 150px 60px 20px;
+    grid-template-rows: auto  10px 10px 40px;    
 }
 
 .speakerquote {
     font-size: 30px;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end:2;
+    transition-duration: 2s;
 }
 
 button {
     font-size: 20px;
     background:var(--main-bg-color);
     color: var(--main-font-color);
+    border-radius: 5px;
 }
 
-.speaker {
-    font-size: 20px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end:3;
-}
-
-.tweet {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 3;
-    grid-row-end:4;
+#tweet {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end:5;
     text-decoration: none;
 
 }
 
 .newquote {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end:4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end:5;
 }
 
