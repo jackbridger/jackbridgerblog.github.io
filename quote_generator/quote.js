@@ -13,7 +13,7 @@ function get_quote() {
     request = new XMLHttpRequest()
 
     // Open a new connection, using the GET request on the URL endpoint
-    request.open('GET', 'http://api.icndb.com/jokes/random?firstName=Mark&amp&lastName=Bridger', true)
+    request.open('GET', 'https://api.icndb.com/jokes/random?firstName=Mark&amp&lastName=Bridger', true)
 
     request.onload = function () {
         chuck_norris_quote = JSON.parse(this.response)
