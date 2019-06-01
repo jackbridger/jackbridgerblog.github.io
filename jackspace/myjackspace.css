@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 70vh 70vh 90vh 90vh 30vh;
+}
+
+.current {
+    background-image: linear-gradient(#97a9c6,#9cbcaf);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:1;
+}
+
+.everyday {
+    background-image: linear-gradient(#e6e6e7,#d7ece4);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:2;
+}
+
+.mypurchases {
+    background-image: linear-gradient(#bfbfc9,#e2f8ef);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:3;
+}
+
+.hotstuff {
+    background-image: linear-gradient(#cefaf8,#f7c3c3);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end:4;
+}
+
+.statistics {
+    background-image: linear-gradient(#f6f7f5,#f5f4ee);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end:5;
+}
