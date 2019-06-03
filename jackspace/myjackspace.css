@@ -11,6 +11,15 @@ body {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end:1;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+
+.select-duration {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 9;
+    grid-column-end: 10;
 }
 
 .everyday {
