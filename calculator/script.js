@@ -9,7 +9,7 @@ class Calculator {
         document.getElementsByClassName('display-history')[0].innerHTML = this.historyDisplay;
     }
     append_number(buttonPressed) {
-        if (this.mainDisplay === '0'){
+        if (this.mainDisplay === '0' && this.historyDisplay === ''){
             this.historyDisplay = buttonPressed;
             this.mainDisplay = buttonPressed;
         }
