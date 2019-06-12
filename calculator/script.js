@@ -1,10 +1,10 @@
 class Calculator {
     // set the initial display values.
     // just returned is if it just performed a calculation (i.e. equals pressed)
-    constructor() {
-        this.mainDisplay = '0';
-        this.historyDisplay = '';
-        this.justReturned = false;
+    constructor(/*mainDisplay, historyDisplay, justReturned*/) {
+        this.mainDisplay = /*mainDisplay ||*/ '0';
+        this.historyDisplay = /*historyDisplay ||*/ '';
+        this.justReturned = /*justReturned ||*/false;
     }
     
     // update the view
@@ -71,10 +71,12 @@ class Calculator {
         var toBeCalculated = this.historyDisplay;
         toBeCalculated = toBeCalculated.replace('×','*').replace('÷','/');
         var return_val = eval(toBeCalculated);
+        return_val = Math.round(return_val * 100000000000)/100000000000;
         this.mainDisplay = return_val;
         this.historyDisplay = return_val;
         this.justReturned = true;
         this.update_view();
+        // calculator = new(this.mainDisplay,this.historyDisplay,true);
     }
 }
 
